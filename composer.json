@@ -1,0 +1,32 @@
+{
+  "name": "chrisharrison/rota-planner",
+  "type": "project",
+  "require": {
+    "php": ">=7.1.0",
+    "symfony/console": "^3.3",
+    "php-di/php-di": "^5.4",
+    "danielgsims/php-collections": "^2.1",
+    "chrisharrison/json-repository": "dev-master",
+    "ramsey/uuid": "^3.7",
+    "league/flysystem": "^1.0",
+    "slim/slim": "^3.8",
+    "philo/laravel-blade": "^3.1",
+    "chrisharrison/controller-builder": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChrisHarrison\\RotaPlanner\\": "src/"
+    }
+  },
+  "config": {
+    "vendor-dir": "vendor",
+    "preferred-install": "dist"
+  },
+  "authors": [
+    {
+      "name": "Chris Harrison",
+      "email": "c.harrison1988@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}

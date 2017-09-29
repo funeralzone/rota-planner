@@ -1,0 +1,26 @@
+{
+    "1": {
+        "name": "Mr A",
+        "email": "",
+        "restrictedDays": [],
+        "contributionScore": 1506700951
+    },
+    "2": {
+        "name": "Mr B",
+        "email": "",
+        "restrictedDays": [],
+        "contributionScore": 1506700952
+    },
+    "3": {
+        "name": "Mr C",
+        "email": "",
+        "restrictedDays": [],
+        "contributionScore": 1506700949
+    },
+    "4": {
+        "name": "Mr D",
+        "email": "",
+        "restrictedDays": [],
+        "contributionScore": 1506700950
+    }
+}
