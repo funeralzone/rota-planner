@@ -7,6 +7,7 @@ use ChrisHarrison\RotaPlanner\Model\Member;
 use ChrisHarrison\RotaPlanner\Model\Repositories\RotaRepositoryInterface;
 use Philo\Blade\Blade;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use PHPMailer\PHPMailer\PHPMailer as Mailer;
@@ -29,33 +30,40 @@ class RemindCommand extends Command
     {
         $this->setName('remind');
         $this->setDescription('Send reminders of upcoming rota.');
+        $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $now = Carbon::now();
-        $rota = $this->rotaRepository->getRotaByName($now->startOfWeek()->format('Y-m-d'));
+        $when = Carbon::createFromFormat('Y-m-d', $input->getArgument('date') ?? Carbon::now()->format('Y-m-d'));
+        $when = $when->addDay();
+
+        $rota = $this->rotaRepository->getRotaByName($when->copy()->startOfWeek()->format('Y-m-d'));
 
         if ($rota == null) {
+            $output->writeln('<error>No rota to send reminders for.</error>');
             return;
         }
 
-        $slot = $rota->getAssignedTimeSlots()->slotByName($now->format('l'));
+        $slot = $rota->getAssignedTimeSlots()->slotByName($when->format('l'));
 
         if ($slot == null) {
+            $output->writeln('<error>No slot to send reminders for.</error>');
             return;
         }
 
-        $slot->getAssignees()->each(function (Member $member) use ($slot, $now) {
+        $slot->getAssignees()->each(function (Member $member) use ($slot, $when) {
             $this->mailer->clearAllRecipients();
             $this->mailer->addAddress($member->getEmail(), $member->getName());
-            $this->mailer->Subject = 'ROTA: It\'s your turn to do the rota today';
+            $this->mailer->Subject = 'ROTA: It\'s your turn to do the rota tomorrow';
             $this->mailer->Body = $this->blade->view()->make('reminder-email', [
                 'slot' => $slot,
                 'you' => $member,
-                'now' => $now
+                'when' => $when
             ]);
             $this->mailer->send();
         });
+
+        $output->writeln('<info>Reminders sent.</info>');
     }
 }

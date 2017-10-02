@@ -3,7 +3,7 @@
 
 <body>
 <p>Hi {{ $you->getName() }},</p>
-<p>Rota assignees for today ({{ $now->format('D jS F') }}):</p>
+<p>Rota assignees for tomorrow ({{ $when->format('D jS F') }}):</p>
 <ul>
     @foreach($slot->getAssignees() as $assignee)
         <li>{{ $assignee->getName() }}</li>

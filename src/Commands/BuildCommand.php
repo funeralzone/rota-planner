@@ -57,16 +57,27 @@ class BuildCommand extends Command
     {
         $this->setName('build');
         $this->setDescription('Generate a rota.');
-        $this->addArgument('date', InputArgument::OPTIONAL, 'Date within the week the rota should be created for. Ordinarily the first date of that week.');
+        $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
+        $this->addArgument('dayToBuild', InputArgument::OPTIONAL, 'Day of the week to build.', 'Saturday');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $inputDate = $input->getArgument('date');
-        if ($inputDate == null) {
-            $firstDateOfWeek = Carbon::now()->startOfWeek()->addWeek();
-        } else {
-            $firstDateOfWeek = Carbon::createFromFormat('Y-m-d', $inputDate)->startOfWeek();
+        $when = Carbon::createFromFormat('Y-m-d', $input->getArgument('date') ?? Carbon::now()->format('Y-m-d'));
+
+        if ($when->format('l') != $input->getArgument('dayToBuild')) {
+            //Not the correct day to build
+            $output->writeln('<error>No rota built as it is not ' . $input->getArgument('dayToBuild') . '.</error>');
+            return;
+        }
+
+        $firstDateOfWeek = $when->startOfWeek()->addWeek();
+
+        $existingRota = $this->rotaRepository->getRotaByName($firstDateOfWeek->format('Y-m-d'));
+
+        if ($existingRota) {
+            $output->writeln('<error>Generation already complete.</error>');
+            return;
         }
 
         $timeSlots = new TimeSlotCollection;
@@ -87,8 +98,9 @@ class BuildCommand extends Command
 
         $this->updateContributionScores($generatedRotaArtifact->getScoredMembers());
         $this->updateRota($rota);
-
+        $output->writeln('<info>Generation complete and persisted.</info>');
         $this->notify($rota);
+        $output->writeln('<info>Notifications sent.</info>');
     }
 
     private function getMembersWithHolidayEntitlement(Carbon $firstDateOfWeek, TimeSlotCollection $timeSlots) : MemberCollection
@@ -159,15 +171,6 @@ class BuildCommand extends Command
 
     private function updateRota(Rota $rota) : void
     {
-        $existingRota = $this->rotaRepository->getRotaByName($rota->getName());
-        if ($existingRota) {
-            $rota = new Rota(
-                $existingRota->getId(),
-                $existingRota->getName(),
-                $rota->getAssignedTimeSlots()
-            );
-        }
-
         $this->rotaRepository->putRota($rota);
         return;
     }
