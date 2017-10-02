@@ -238,5 +238,685 @@
                 ]
             }
         ]
+    },
+    "56f09ca5-dd7d-4541-b3a8-851c51c49da4": {
+        "name": "20174040",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            }
+        ]
+    },
+    "ee13834b-4a99-4201-bdf4-dc6affc5a958": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+    },
+    "139b448b-f56a-48b6-a928-9484f6a533e2": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            }
+        ]
+    },
+    "d1ea3a2d-09bc-4833-b780-f61f88b40014": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+    },
+    "7e558766-c9e2-46f8-bb7c-279f35eaa083": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            }
+        ]
+    },
+    "62f40d50-b62c-4001-99fd-d94ce8441e50": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+    },
+    "0366be2c-e9f9-41bf-9434-1d4d7e615be2": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "3",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "3",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "d21e8217-cab3-4126-9f1a-0fb6c5d0c98b": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            }
+        ]
+    },
+    "87d4c075-cc65-4e81-9148-7f19b6f24c6a": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "71dbd8c5-a17a-46e6-8c65-71a6bbc7da8e": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            }
+        ]
+    },
+    "a38680ee-3a65-441e-a7b9-5cdba233ad5d": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "2",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "429200a8-bcd0-4993-82a5-583cfabdfa46": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "4"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "3879a6ea-afce-4ae6-9fca-9e7c19a02571": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+    },
+    "0c5de12f-18c0-4137-a09a-be8c2a7f7147": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "6bd4a081-6835-431f-8d57-8f82c3797831": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+    },
+    "a1cf889e-5626-44f4-addf-b50e13accaed": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "a827eee0-26c7-4f4f-8fe3-d3b11c2d3d2a": {
+        "name": "2017W40",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "monday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "tuesday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "wednesday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "timeSlot": "thursday",
+                "assignees": [
+                    "4",
+                    "3"
+                ]
+            },
+            {
+                "timeSlot": "friday",
+                "assignees": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
     }
 }

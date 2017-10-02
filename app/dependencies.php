@@ -1,6 +1,6 @@
 <?php
 
-use ChrisHarrison\RotaPlanner\Commands\GenerateCommand;
+use ChrisHarrison\RotaPlanner\Commands\BuildCommand;
 use ChrisHarrison\RotaPlanner\Model\Services\RotaGenerator;
 use ChrisHarrison\RotaPlanner\Model\Services\IdGeneratorInterface;
 use ChrisHarrison\RotaPlanner\Model\Services\IdGenerator;
@@ -24,7 +24,7 @@ return [
     'DataFilesystem' => function (Container $c) {
         return new Filesystem(new LocalAdapter($c->get('settings')['dataPath']));
     },
-    GenerateCommand::class => \DI\object(GenerateCommand::class),
+    BuildCommand::class => \DI\object(BuildCommand::class),
     RotaGenerator::class => \DI\object(RotaGenerator::class),
     IdGeneratorInterface::class => \DI\object(IdGenerator::class),
     RotaRepositoryInterface::class => function (Container $c) {

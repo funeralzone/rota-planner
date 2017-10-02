@@ -9,6 +9,7 @@ use ChrisHarrison\RotaPlanner\Model\TimeSlot;
 use ChrisHarrison\RotaPlanner\Model\TimeSlotCollection;
 use ChrisHarrison\RotaPlanner\Persistence\MemberRepositoryInterface;
 use ChrisHarrison\RotaPlanner\Persistence\RotaRepositoryInterface;
+use ChrisHarrison\RotaPlanner\Presenters\RotaPresenter;
 use Philo\Blade\Blade;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -20,6 +21,7 @@ class BuildCommand extends Command
     private $rotaRepository;
     private $memberRepository;
     private $controllerBuilder;
+    private $rotaPresenter;
     private $blade;
 
     public function __construct(
@@ -27,6 +29,7 @@ class BuildCommand extends Command
         RotaRepositoryInterface $rotaRepository,
         MemberRepositoryInterface $memberRepository,
         ControllerBuilderInterface $controllerBuilder,
+        RotaPresenter $rotaPresenter,
         Blade $blade
     )
     {
@@ -34,6 +37,7 @@ class BuildCommand extends Command
         $this->rotaRepository = $rotaRepository;
         $this->memberRepository = $memberRepository;
         $this->controllerBuilder = $controllerBuilder;
+        $this->rotaPresenter = $rotaPresenter;
         $this->blade = $blade;
         parent::__construct();
     }
@@ -57,7 +61,7 @@ class BuildCommand extends Command
         $timeSlots = $timeSlots->add(new TimeSlot('friday'));
 
         $generatedRotaArtifact = $this->rotaGenerator->generate(
-            $date->format('Y-W'),
+            $date->format('Y') . 'W' . $date->format('W'),
             $timeSlots,
             $members,
             2
@@ -68,6 +72,6 @@ class BuildCommand extends Command
         $this->memberRepository->saveMembersCollection($generatedRotaArtifact->getScoredMembers());
         $this->rotaRepository->putRota($rota);
 
-        $this->controllerBuilder->build(new RotaController($rota, $this->blade));
+        $this->controllerBuilder->build(new RotaController($rota, $this->rotaPresenter, $this->blade));
     }
 }
