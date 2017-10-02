@@ -8,6 +8,7 @@ use ChrisHarrison\RotaPlanner\Model\Member;
 use ChrisHarrison\RotaPlanner\Model\MemberCollection;
 use ChrisHarrison\RotaPlanner\Model\TimeSlot;
 use ChrisHarrison\RotaPlanner\Model\TimeSlotCollection;
+use ChrisHarrison\RotaPlanner\Model\Repositories\MemberRepositoryInterface;
 
 class MemberRepository implements MemberRepositoryInterface
 {
@@ -28,15 +29,38 @@ class MemberRepository implements MemberRepositoryInterface
         return $members;
     }
 
-    public function getMemberById(string $id) : Member
+    public function getMemberById(string $id) : ?Member
     {
-        return $this->entityToMember($this->jsonRepository->getEntityById($id));
+        $entity = $this->jsonRepository->getEntityById($id);
+
+        if ($entity == null) {
+            return null;
+        }
+
+        return $this->entityToMember($entity);
     }
 
-    public function saveMembersCollection(MemberCollection $collection) : void
+    public function getMemberByEmail(string $email) : ?Member
+    {
+        $entities = $this->jsonRepository->getEntitiesByProperties(['email' => $email]);
+
+        if ($entities->count() == 0) {
+            return null;
+        }
+
+        return $this->entityToMember($entities->first());
+    }
+
+    public function putMember(Member $member) : void
+    {
+        $this->jsonRepository->putEntity($this->memberToEntity($member));
+        return;
+    }
+
+    public function putMemberCollection(MemberCollection $collection) : void
     {
         $collection->each(function (Member $member) {
-            $this->jsonRepository->putEntity($this->memberToEntity($member));
+            $this->putMember($member);
         });
 
         return;
@@ -52,6 +76,7 @@ class MemberRepository implements MemberRepositoryInterface
 
         return new Member(
             $entity->getId(),
+            $entity->getProperty('timetasticId'),
             (string) $entity->getProperty('name'),
             (string) $entity->getProperty('email'),
             $restrictedTimeSlots,
@@ -69,6 +94,7 @@ class MemberRepository implements MemberRepositoryInterface
 
         return new Entity($member->getId(), [
             'name' => $member->getName(),
+            'timetasticId' => $member->getTimetasticId(),
             'email' => $member->getEmail(),
             'restrictedDays' => $restrictedDays,
             'contributionScore' => $member->getContributionScore()

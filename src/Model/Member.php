@@ -5,14 +5,16 @@ namespace ChrisHarrison\RotaPlanner\Model;
 class Member
 {
     private $id;
+    private $timetasticId;
     private $name;
     private $email;
     private $restrictedTimeSlots;
     private $contributionScore;
 
-    public function __construct(string $id, string $name, string $email, TimeSlotCollection $restrictedTimeSlots, int $contributionScore)
+    public function __construct(string $id, ?string $timetasticId, string $name, string $email, TimeSlotCollection $restrictedTimeSlots, int $contributionScore)
     {
         $this->id = $id;
+        $this->timetasticId = $timetasticId;
         $this->name = $name;
         $this->email = $email;
         $this->restrictedTimeSlots = $restrictedTimeSlots;
@@ -22,6 +24,11 @@ class Member
     public function getId() : string
     {
         return $this->id;
+    }
+
+    public function getTimetasticId() : ?string
+    {
+        return $this->timetasticId;
     }
 
     public function getName() : string

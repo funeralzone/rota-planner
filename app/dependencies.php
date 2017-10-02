@@ -4,23 +4,21 @@ use ChrisHarrison\RotaPlanner\Commands\BuildCommand;
 use ChrisHarrison\RotaPlanner\Model\Services\RotaGenerator;
 use ChrisHarrison\RotaPlanner\Model\Services\IdGeneratorInterface;
 use ChrisHarrison\RotaPlanner\Model\Services\IdGenerator;
-use ChrisHarrison\RotaPlanner\Persistence\RotaRepositoryInterface;
+use ChrisHarrison\RotaPlanner\Model\Repositories\RotaRepositoryInterface;
 use ChrisHarrison\RotaPlanner\Persistence\RotaRepository;
-use ChrisHarrison\RotaPlanner\Persistence\MemberRepositoryInterface;
+use ChrisHarrison\RotaPlanner\Model\Repositories\MemberRepositoryInterface;
 use ChrisHarrison\JsonRepository\Persistence\JsonRepository;
 use DI\Container;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local as LocalAdapter;
 use ChrisHarrison\RotaPlanner\Persistence\MemberRepository;
 use ChrisHarrison\RotaPlanner\Model\Services\IncrementingNumber;
-use ChrisHarrison\ControllerBuilder\ControllerBuilderInterface;
-use ChrisHarrison\ControllerBuilder\ControllerBuilder;
 use Philo\Blade\Blade;
+use ChrisHarrison\TimetasticAPI\Client as TimetasticClient;
+use ChrisHarrison\TimetasticAPI\HttpClient as TimetasticHttpClient;
+use PHPMailer\PHPMailer\PHPMailer;
 
 return [
-    'BuildFilesystem' => function (Container $c) {
-        return new Filesystem(new LocalAdapter($c->get('settings')['buildPath']));
-    },
     'DataFilesystem' => function (Container $c) {
         return new Filesystem(new LocalAdapter($c->get('settings')['dataPath']));
     },
@@ -39,12 +37,29 @@ return [
         );
     },
     IncrementingNumber::class => new IncrementingNumber(time()),
-    ControllerBuilderInterface::class => function (Container $c) {
-        return new ControllerBuilder($c->get('BuildFilesystem'));
-    },
     Blade::class => function (Container $c) {
         $views = $c->get('settings')['blade']['views'];
         $cache = $c->get('settings')['blade']['cache'];
         return new Blade($views, $cache);
     },
+    TimetasticClient::class => function (Container $c) {
+        return new TimetasticClient(new TimetasticHttpClient($c->get('settings')['timetastic']['token']));
+    },
+    PHPMailer::class => function (Container $c) {
+        $mailer = new PHPMailer();
+        $mailer->isHTML(true);
+        $mailer->setFrom($c->get('settings')['email']['fromEmail'], $c->get('settings')['email']['fromName']);
+        $mailer->isSMTP();
+        if ($c->get('settings')['email']['debug']) {
+            $mailer->SMTPDebug = 2;
+        }
+        $mailer->Host = $c->get('settings')['email']['host'];
+        $mailer->Port = $c->get('settings')['email']['port'];
+        $mailer->SMTPSecure = 'tls';
+        $mailer->SMTPAuth = true;
+        $mailer->Username = $c->get('settings')['email']['username'];
+        $mailer->Password = $c->get('settings')['email']['password'];
+
+        return $mailer;
+    }
 ];

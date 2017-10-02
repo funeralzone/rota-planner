@@ -1,26 +1,9 @@
 {
-    "1": {
-        "name": "Mr A",
-        "email": "",
+    "9327381e-434f-4c67-ad2c-0b22a647570a": {
+        "name": "D H",
+        "timetasticId": "301106",
+        "email": "c.harrison1988@gmail.com",
         "restrictedDays": [],
-        "contributionScore": 1506931781
-    },
-    "2": {
-        "name": "Mr B",
-        "email": "",
-        "restrictedDays": [],
-        "contributionScore": 1506931782
-    },
-    "3": {
-        "name": "Mr C",
-        "email": "",
-        "restrictedDays": [],
-        "contributionScore": 1506931780
-    },
-    "4": {
-        "name": "Mr D",
-        "email": "",
-        "restrictedDays": [],
-        "contributionScore": 1506931779
+        "contributionScore": 1506949826
     }
 }

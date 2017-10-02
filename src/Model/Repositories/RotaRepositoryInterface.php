@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisHarrison\RotaPlanner\Persistence;
+namespace ChrisHarrison\RotaPlanner\Model\Repositories;
 
 use ChrisHarrison\RotaPlanner\Model\Rota;
 

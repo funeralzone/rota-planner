@@ -10,6 +10,8 @@ use ChrisHarrison\RotaPlanner\Model\Member;
 use ChrisHarrison\RotaPlanner\Model\MemberCollection;
 use ChrisHarrison\RotaPlanner\Model\Rota;
 use ChrisHarrison\RotaPlanner\Model\TimeSlot;
+use ChrisHarrison\RotaPlanner\Model\Repositories\RotaRepositoryInterface;
+use ChrisHarrison\RotaPlanner\Model\Repositories\MemberRepositoryInterface;
 
 class RotaRepository implements RotaRepositoryInterface
 {
@@ -24,12 +26,24 @@ class RotaRepository implements RotaRepositoryInterface
 
     public function getRotaById(string $id) : ?Rota
     {
-        return $this->entityToRota($this->jsonRepository->getEntityById($id));
+        $entity = $this->jsonRepository->getEntityById($id);
+
+        if ($entity == null) {
+            return null;
+        }
+
+        return $this->entityToRota($entity);
     }
 
     public function getRotaByName(string $name) : ?Rota
     {
-        return $this->entityToRota($this->jsonRepository->getEntitiesByProperties(['name' => $name])->first());
+        $entities = $this->jsonRepository->getEntitiesByProperties(['name' => $name]);
+
+        if ($entities->count() == 0) {
+            return null;
+        }
+
+        return $this->entityToRota($entities->first());
     }
 
     public function putRota(Rota $rota) : void
@@ -44,7 +58,7 @@ class RotaRepository implements RotaRepositoryInterface
         $assignedTimeSlotsArray = $entity->getProperty('assignedTimeSlots');
         foreach ($assignedTimeSlotsArray as $assignedTimeSlot) {
             $assignees = new MemberCollection;
-            foreach ($assignedTimeSlots['assignees'] as $assignee) {
+            foreach ($assignedTimeSlot['assignees'] as $assignee) {
                 $assignees = $assignees->add($this->memberRepository->getMemberById($assignee));
             }
             $assignedTimeSlots = $assignedTimeSlots->add(new AssignedTimeSlot(
