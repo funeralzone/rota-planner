@@ -15,7 +15,7 @@ return [
         'host' => 'smtp.gmail.com',
         'port' => 587,
         'username' => 'c.harrison1988@gmail.com',
-        'password' => 'mlydibxwiglemeyi',
+        'password' => getenv('SMTP_PASSWORD'),
         'debug' => false
     ]
 ];
