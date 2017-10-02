@@ -31,7 +31,7 @@ class BuildCommand extends Command
     private $blade;
     private $mailer;
 
-    private const TIMESLOT_NAMES = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+    private const TIMESLOT_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
     public function __construct(
         RotaGenerator $rotaGenerator,
@@ -174,20 +174,17 @@ class BuildCommand extends Command
 
     private function notify(Rota $rota)
     {
-        $mailer = $this->mailer;
         $allMembers = $this->memberRepository->getAllMembers();
-        $allMembers->each(function (Member $member) use (&$mailer) {
-            $mailer->addAddress($member->getEmail(), $member->getName());
+        $allMembers->each(function (Member $member) {
+            $this->mailer->addAddress($member->getEmail(), $member->getName());
         });
 
         $startDate = Carbon::instance($this->rotaPresenter->getStartDate($rota));
 
-        $mailer->Subject = 'Next week\'s rota (Mon '.$startDate->format('j M').')';
-        $mailer->Body = $this->blade->view()->make('new-rota-email', [
+        $this->mailer->Subject = 'ROTA: Next week\'s rota (Mon '.$startDate->format('j M').')';
+        $this->mailer->Body = $this->blade->view()->make('new-rota-email', [
             'rota' => $rota
         ]);
-        if (!$mailer->send()) {
-            echo "Mailer Error: " . $mailer->ErrorInfo;
-        }
+        $this->mailer->send();
     }
 }
