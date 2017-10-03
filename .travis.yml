@@ -6,6 +6,7 @@ script:
   - php console.php daily
   - git add data
   - git commit --allow-empty -m "Data changes" -- data
+  - git remote set-url origin https://chrisharrison:$GITHUB_TOKEN@github.com/chrisharrison/rota-planner.git
   - git push origin HEAD:master
 branches:
   only: master
