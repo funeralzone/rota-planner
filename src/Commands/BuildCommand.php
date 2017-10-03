@@ -58,16 +58,18 @@ class BuildCommand extends Command
         $this->setName('build');
         $this->setDescription('Generate a rota.');
         $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
-        $this->addArgument('dayToBuild', InputArgument::OPTIONAL, 'Day of the week to build.', 'Saturday');
+        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Saturday, Sunday');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
         $when = Carbon::createFromFormat('Y-m-d', $input->getArgument('date') ?? Carbon::now()->format('Y-m-d'));
 
-        if ($when->format('l') != $input->getArgument('dayToBuild')) {
+        $daysToBuild = explode(',', str_replace(' ', '', $input->getArgument('daysToBuild')));
+
+        if (!in_array($when->format('l'), $daysToBuild)) {
             //Not the correct day to build
-            $output->writeln('<error>No rota built as it is not ' . $input->getArgument('dayToBuild') . '.</error>');
+            $output->writeln('<error>No rota built as it is not ' . $input->getArgument('daysToBuild') . '.</error>');
             return;
         }
 
