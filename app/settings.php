@@ -17,5 +17,6 @@ return [
         'username' => 'c.harrison1988@gmail.com',
         'password' => getenv('SMTP_PASSWORD'),
         'debug' => false
-    ]
+    ],
+    'encryptionKey' => getenv('ENCRYPTION_KEY')
 ];

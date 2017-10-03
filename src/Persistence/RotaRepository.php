@@ -3,7 +3,7 @@
 namespace ChrisHarrison\RotaPlanner\Persistence;
 
 use ChrisHarrison\JsonRepository\Entities\Entity;
-use ChrisHarrison\JsonRepository\Persistence\JsonRepository;
+use ChrisHarrison\JsonRepository\Repositories\RepositoryInterface;
 use ChrisHarrison\RotaPlanner\Model\AssignedTimeSlot;
 use ChrisHarrison\RotaPlanner\Model\AssignedTimeSlotCollection;
 use ChrisHarrison\RotaPlanner\Model\Member;
@@ -18,7 +18,7 @@ class RotaRepository implements RotaRepositoryInterface
     private $jsonRepository;
     private $memberRepository;
 
-    public function __construct(JsonRepository $jsonRepository, MemberRepositoryInterface $memberRepository)
+    public function __construct(RepositoryInterface $jsonRepository, MemberRepositoryInterface $memberRepository)
     {
         $this->jsonRepository = $jsonRepository;
         $this->memberRepository = $memberRepository;

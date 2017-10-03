@@ -7,7 +7,8 @@ use ChrisHarrison\RotaPlanner\Model\Services\IdGenerator;
 use ChrisHarrison\RotaPlanner\Model\Repositories\RotaRepositoryInterface;
 use ChrisHarrison\RotaPlanner\Persistence\RotaRepository;
 use ChrisHarrison\RotaPlanner\Model\Repositories\MemberRepositoryInterface;
-use ChrisHarrison\JsonRepository\Persistence\JsonRepository;
+use ChrisHarrison\JsonRepository\Repositories\EncryptedJsonRepository;
+use ChrisHarrison\JsonRepository\Repositories\JsonRepository;
 use DI\Container;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local as LocalAdapter;
@@ -17,6 +18,7 @@ use Philo\Blade\Blade;
 use ChrisHarrison\TimetasticAPI\Client as TimetasticClient;
 use ChrisHarrison\TimetasticAPI\HttpClient as TimetasticHttpClient;
 use PHPMailer\PHPMailer\PHPMailer;
+use Phlib\Encrypt\EncryptorInterface;
 
 return [
     'DataFilesystem' => function (Container $c) {
@@ -25,15 +27,26 @@ return [
     BuildCommand::class => \DI\object(BuildCommand::class),
     RotaGenerator::class => \DI\object(RotaGenerator::class),
     IdGeneratorInterface::class => \DI\object(IdGenerator::class),
+    EncryptorInterface::class => function (Container $c) {
+        return new Phlib\Encrypt\Encryptor\OpenSsl($c->get('settings')['encryptionKey']);
+    },
     RotaRepositoryInterface::class => function (Container $c) {
         return new RotaRepository(
-            new JsonRepository($c->get('DataFilesystem'), 'rotas.json'),
+            new JsonRepository(
+                $c->get('DataFilesystem'),
+                'rotas.json'
+            ),
             $c->get(MemberRepositoryInterface::class)
         );
     },
     MemberRepositoryInterface::class => function (Container $c) {
         return new MemberRepository(
-            new JsonRepository($c->get('DataFilesystem'), 'members.json')
+            new EncryptedJsonRepository(
+                $c->get('DataFilesystem'),
+                'members.json',
+                $c->get(EncryptorInterface::class),
+                ['email']
+            )
         );
     },
     IncrementingNumber::class => new IncrementingNumber(time()),

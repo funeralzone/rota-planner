@@ -13,23 +13,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisharrison/json-repository.git",
-                "reference": "be97d99e604c904656357f851799f920b24cac27"
+                "reference": "7637f2f50043b9be80a4a724c0c45b892731d3df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisharrison/json-repository/zipball/be97d99e604c904656357f851799f920b24cac27",
-                "reference": "be97d99e604c904656357f851799f920b24cac27",
+                "url": "https://api.github.com/repos/chrisharrison/json-repository/zipball/7637f2f50043b9be80a4a724c0c45b892731d3df",
+                "reference": "7637f2f50043b9be80a4a724c0c45b892731d3df",
                 "shasum": ""
             },
             "require": {
                 "danielgsims/php-collections": "^2.1",
                 "league/flysystem": "^1.0",
+                "phlib/encrypt": "^2.0",
                 "php": ">=7.1.0"
             },
             "require-dev": {
                 "league/flysystem-memory": "^1.0",
                 "mockery/mockery": "^0.9.7",
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.1"
             },
             "type": "library",
             "autoload": {
@@ -44,7 +46,7 @@
                     "email": "c.harrison1988@gmail.com"
                 }
             ],
-            "time": "2017-09-13 16:07:37"
+            "time": "2017-10-03 13:52:55"
         },
         {
             "name": "chrisharrison/timetastic-api-php",
@@ -953,6 +955,44 @@
                 "laravel"
             ],
             "time": "2015-12-04 09:42:42"
+        },
+        {
+            "name": "phlib/encrypt",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phlib/encrypt.git",
+                "reference": "877fb413c32b38ef0a3fd66ebfd32d387e4269f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phlib/encrypt/zipball/877fb413c32b38ef0a3fd66ebfd32d387e4269f5",
+                "reference": "877fb413c32b38ef0a3fd66ebfd32d387e4269f5",
+                "shasum": ""
+            },
+            "require": {
+                "lib-openssl": "*",
+                "paragonie/random_compat": "^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phlib\\Encrypt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Martin Price",
+                    "email": "martin.price@emailcenteruk.com"
+                }
+            ],
+            "description": "Generic class for performing encryption",
+            "time": "2016-04-06 14:11:38"
         },
         {
             "name": "php-di/invoker",
