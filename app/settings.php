@@ -11,10 +11,10 @@ return [
     ],
     'email' => [
         'fromName' => 'Rota',
-        'fromEmail' => 'c.harrison1988@gmail.com',
+        'fromEmail' => getenv('SMTP_USERNAME'),
         'host' => 'smtp.gmail.com',
         'port' => 587,
-        'username' => 'c.harrison1988@gmail.com',
+        'username' => getenv('SMTP_USERNAME'),
         'password' => getenv('SMTP_PASSWORD'),
         'debug' => false
     ],
