@@ -1,0 +1,14 @@
+language: php
+php:
+  - '7.1'
+install: composer install --no-interaction
+script:
+  - php console.php daily
+  - git add data
+  - git commit --allow-empty -m "Data changes" -- data
+branches:
+  only: master
+cache:
+  directories:
+  - vendor
+  - $HOME/.cache/composer
