@@ -58,7 +58,7 @@ class BuildCommand extends Command
         $this->setName('build');
         $this->setDescription('Generate a rota.');
         $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
-        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Saturday, Sunday');
+        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
