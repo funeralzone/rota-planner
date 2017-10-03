@@ -16,7 +16,7 @@ return [
         'port' => 587,
         'username' => getenv('SMTP_USERNAME'),
         'password' => getenv('SMTP_PASSWORD'),
-        'debug' => false
+        'debug' => true
     ],
     'encryptionKey' => getenv('ENCRYPTION_KEY')
 ];
