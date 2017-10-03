@@ -6,6 +6,7 @@ script:
   - php console.php daily
   - git add data
   - git commit --allow-empty -m "Data changes" -- data
+  - git push
 branches:
   only: master
 cache:
