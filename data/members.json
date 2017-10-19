@@ -3,7 +3,7 @@
         "name": "Kevin H",
         "timetasticId": "240737",
         "email": "drAoXu0T4OBik9F4Us0nrhBXRASBQAtc4jAZ52AY385o\/3HjJ9pWJWT0oBBuIguueW+jFZMek5WKUmO3DoiTorUFLIISYo5pMI\/ViNPXVh1H8wdXvnL+gQk3asN4V+gx9+LWUamGmJA=",
-        "restrictedDays": [],
+        "restrictedDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "contributionScore": 0
     },
     "7c5c916e-2659-4f07-9ae6-e819cec9b5bf": {
@@ -45,7 +45,7 @@
         "name": "Dan B",
         "timetasticId": "241065",
         "email": "KyCTC43dwNFSIbSt2819JI0O9phdpGiptVJWNuZmz5DybQgKEMsPRxnFVqS6\/+ZjIAI+VY+AusWQEYvI45qNpqilQJsO1fhtyzCDNFmFISgWahfJPJfrVg==",
-        "restrictedDays": [],
+        "restrictedDays": ["Tuesday", "Wednesday", "Thursday"],
         "contributionScore": 0
     },
     "013d0f0a-51e8-47ab-8aab-d2489236f2cc": {
@@ -59,28 +59,28 @@
         "name": "Ed G",
         "timetasticId": "241061",
         "email": "h7uHrwmdafjU0wmbLS0Q+ruDA9VMSa8K31ZeffnP0xW3D+ZH4xtKS7fZM35QJprWF\/3Ut7KDe4m4d7V99W1R\/6rqtj3m87KlGTHwowKz\/+XYLHO9gKei0w==",
-        "restrictedDays": [],
+        "restrictedDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "contributionScore": 0
     },
     "ea947cf3-89cf-4574-9b71-c83e55dd1ca7": {
         "name": "Ellie B",
         "timetasticId": "241063",
         "email": "6NEZUBJV27FKO\/I6Nujkg690lvpxRM8DJwLv9Rf6dVCDOI0zCiA3iZbBUaMBfu84Z23wPuUK2CaJedPSE7VKpNn5xWHyI75F3D4N64Gbr17IQgBhkLf8CA==",
-        "restrictedDays": [],
+        "restrictedDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "contributionScore": 0
     },
     "cf0f3848-8d74-4dc6-97ac-30c6b6e0c5d4": {
         "name": "Emily S",
         "timetasticId": "243515",
         "email": "fb\/VU1yY54ih49sfqOGhKeEcOkX92pL00ZuFiY+aoWcLcNmHiBxb1y\/gleSVSJaHINT3UAMeKOmUB+yIttufB76nMfA9zA3RnkVCin8UHLuchhVGXnOhh9ObX\/QRk8k0S5Rm7oRhXAs=",
-        "restrictedDays": [],
+        "restrictedDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "contributionScore": 0
     },
     "ef2fc224-bc72-40b0-acce-75d36e0df5fa": {
         "name": "Gary M",
         "timetasticId": "241066",
         "email": "O7DtA2UBhAhxDXo2m703+cdyKZ64Eyzpia+noaAtmJPXeKUd6L\/TzVLmbmuAcd5OStnC+YOLa0Vm7LDSLj9v5X9jReNFU9FZ7JCnjSWikmDGho5f55w3zw==",
-        "restrictedDays": [],
+        "restrictedDays": ["Wednesday", "Thursday", "Friday"],
         "contributionScore": 0
     },
     "874d887d-dd18-4325-bbb1-eaba60740056": {
