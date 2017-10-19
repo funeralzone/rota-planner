@@ -121,9 +121,9 @@ class BuildCommand extends Command
             $restrictedTimeSlots = $member->getRestrictedTimeSlots();
 
             $holidaysResponse = $this->timetasticClient->getHolidays([
-                'userids' => [$member->getTimetasticId()],
+                'userids' => $member->getTimetasticId(),
                 'start' => $firstDateOfWeek->format('Y-m-d'),
-                'end' => $firstDateOfWeek->copy()->addDays(7)->format('Y-m-d'),
+                'end' => $firstDateOfWeek->copy()->addDays(5)->format('Y-m-d'),
                 'status' => 2 /* Approved */
             ]);
 
@@ -156,8 +156,8 @@ class BuildCommand extends Command
                 $member->getContributionScore()
             );
             $membersWithEntitlement = $membersWithEntitlement->add($entitledMember);
-        });
 
+        });
         return $membersWithEntitlement;
     }
 

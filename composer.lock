@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisharrison/json-repository.git",
-                "reference": "7637f2f50043b9be80a4a724c0c45b892731d3df"
+                "reference": "30f78adc3d7b844ad8bd782639e8ff3cf4aaa778"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisharrison/json-repository/zipball/7637f2f50043b9be80a4a724c0c45b892731d3df",
-                "reference": "7637f2f50043b9be80a4a724c0c45b892731d3df",
+                "url": "https://api.github.com/repos/chrisharrison/json-repository/zipball/30f78adc3d7b844ad8bd782639e8ff3cf4aaa778",
+                "reference": "30f78adc3d7b844ad8bd782639e8ff3cf4aaa778",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                     "email": "c.harrison1988@gmail.com"
                 }
             ],
-            "time": "2017-10-03 13:52:55"
+            "time": "2017-10-19 13:02:17"
         },
         {
             "name": "chrisharrison/timetastic-api-php",
