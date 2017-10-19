@@ -10,6 +10,8 @@ return [
         'token' => getenv('TIMETASTIC_TOKEN')
     ],
     'email' => [
+        'testMode' => getenv('EMAIL_TEST_MODE'),
+        'testRecipient' => getenv('EMAIL_TEST_RECIPIENT'),
         'fromName' => 'Rota',
         'fromEmail' => getenv('SMTP_USERNAME'),
         'host' => 'smtp.gmail.com',

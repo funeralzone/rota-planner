@@ -13,13 +13,14 @@ use ChrisHarrison\RotaPlanner\Model\TimeSlotCollection;
 use ChrisHarrison\RotaPlanner\Model\Repositories\MemberRepositoryInterface;
 use ChrisHarrison\RotaPlanner\Model\Repositories\RotaRepositoryInterface;
 use ChrisHarrison\RotaPlanner\Presenters\RotaPresenter;
+use ChrisHarrison\RotaPlanner\Services\Notification;
+use ChrisHarrison\RotaPlanner\Services\Notifier;
 use Philo\Blade\Blade;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use ChrisHarrison\TimetasticAPI\Client as TimetasticClient;
-use PHPMailer\PHPMailer\PHPMailer as Mailer;
 
 class BuildCommand extends Command
 {
@@ -29,7 +30,7 @@ class BuildCommand extends Command
     private $rotaPresenter;
     private $timetasticClient;
     private $blade;
-    private $mailer;
+    private $notifier;
 
     private const TIMESLOT_NAMES = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
@@ -40,7 +41,7 @@ class BuildCommand extends Command
         RotaPresenter $rotaPresenter,
         TimetasticClient $timetasticClient,
         Blade $blade,
-        Mailer $mailer
+        Notifier $notifier
     )
     {
         $this->rotaGenerator = $rotaGenerator;
@@ -49,7 +50,7 @@ class BuildCommand extends Command
         $this->rotaPresenter = $rotaPresenter;
         $this->timetasticClient = $timetasticClient;
         $this->blade = $blade;
-        $this->mailer = $mailer;
+        $this->notifier = $notifier;
         parent::__construct();
     }
 
@@ -179,17 +180,21 @@ class BuildCommand extends Command
 
     private function notify(Rota $rota)
     {
+        $recipients = [];
         $allMembers = $this->memberRepository->getAllMembers();
-        $allMembers->each(function (Member $member) {
-            $this->mailer->addAddress($member->getEmail(), $member->getName());
+        $allMembers->each(function (Member $member) use (&$recipients) {
+            $recipients[] = $member->getEmail();
         });
 
         $startDate = Carbon::instance($this->rotaPresenter->getStartDate($rota));
 
-        $this->mailer->Subject = 'ROTA: Next week\'s rota (Mon '.$startDate->format('j M').')';
-        $this->mailer->Body = $this->blade->view()->make('new-rota-email', [
-            'rota' => $rota
-        ]);
-        $this->mailer->send();
+        $notification = new Notification(
+            $recipients,
+            'ROTA: Next week\'s rota (Mon '.$startDate->format('j M').')',
+            $this->blade->view()->make('new-rota-email', [
+                'rota' => $rota
+            ])
+        );
+        $this->notifier->notify($notification);
     }
 }

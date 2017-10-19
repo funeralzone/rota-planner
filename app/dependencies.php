@@ -19,6 +19,9 @@ use ChrisHarrison\TimetasticAPI\Client as TimetasticClient;
 use ChrisHarrison\TimetasticAPI\HttpClient as TimetasticHttpClient;
 use PHPMailer\PHPMailer\PHPMailer;
 use Phlib\Encrypt\EncryptorInterface;
+use ChrisHarrison\RotaPlanner\Services\Notifier;
+use ChrisHarrison\RotaPlanner\Services\TestingNotifier;
+use ChrisHarrison\RotaPlanner\Services\EmailNotifier;
 
 return [
     'DataFilesystem' => function (Container $c) {
@@ -74,5 +77,12 @@ return [
         $mailer->Password = $c->get('settings')['email']['password'];
 
         return $mailer;
+    },
+    Notifier::class => function (Container $c) {
+        if ($c->get('settings')['email']['testMode']) {
+            return new TestingNotifier($c->get(PHPMailer::class), $c->get('settings')['email']['testRecipient']);
+        } else {
+            return new EmailNotifier($c->get(PHPMailer::class));
+        }
     }
 ];
