@@ -16,8 +16,14 @@ final class EmailNotifier implements Notifier
     public function notify(Notification $notification) : void
     {
         $this->mailer->clearAllRecipients();
+        $recipientCount = 0;
         foreach ($notification->getRecipients() as $recipient) {
-            $this->mailer->addAddress($recipient);
+            if ($recipientCount == 0) {
+                $this->mailer->addAddress($recipient);
+            } else {
+                $this->mailer->addBCC($recipient);
+            }
+            $recipientCount++;
         }
 
         $this->mailer->Subject = $notification->getSubject();
