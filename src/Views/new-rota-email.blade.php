@@ -6,11 +6,9 @@
 <p>Below is next week's rota.</p>
 <table border="1" cellpadding="10">
     <thead>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
+        @foreach ($rota->getAssignedTimeSlots() as $timeSlot)
+            <th>{{ $timeSlot->getTimeSlot()->getName() }}</th>
+        @endforeach
     </thead>
     <tbody>
         <tr>

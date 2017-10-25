@@ -34,15 +34,29 @@ class RotaGenerator
         $assignedTimeSlots = new AssignedTimeSlotCollection;
 
         $timeSlotCollection->each(function (TimeSlot $timeSlot) use (&$assignedTimeSlots, &$members, $numberOfMembersPerTimeSlot) {
+            $memberAvailable = true;
             $assignees = new MemberCollection;
             for ($i = 0; $i < $numberOfMembersPerTimeSlot; $i++) {
-                $chosenMember = $members->getBestMemberForTimeSlot($timeSlot);
-                $assignees = $assignees->add($members->getBestMemberForTimeSlot($timeSlot));
+                try {
+                    $chosenMember = $members->getBestMemberForTimeSlot($timeSlot);
+                } catch (\Exception $e) {
+                    if ($e->getCode() === 5000) {
+                        $memberAvailable = false;
+                        break;
+                    } else {
+                        throw $e;
+                    }
+                }
+
+                $assignees = $assignees->add($chosenMember);
                 $members = $members->removeMember($chosenMember);
                 $chosenMember = $chosenMember->withContributionScore($this->incrementingNumber->get());
                 $members = $members->add($chosenMember);
             }
-            $assignedTimeSlots = $assignedTimeSlots->add(new AssignedTimeSlot($timeSlot, $assignees));
+
+            if ($memberAvailable) {
+                $assignedTimeSlots = $assignedTimeSlots->add(new AssignedTimeSlot($timeSlot, $assignees));
+            }
         });
 
         $rota = new Rota($this->idGenerator->generate(), $name, $assignedTimeSlots);

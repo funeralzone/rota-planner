@@ -22,7 +22,7 @@ class MemberCollection extends Collection
     {
         $filtered = $this->filterMembersWhoCannotFulfillTimeSlot($timeSlot);
         if ($filtered->count() == 0) {
-            throw new \Exception('Not enough members that can fulfill the time slots requested.');
+            throw new \Exception('Not enough members that can fulfill the time slots requested.', 5000);
         }
         return $filtered->sortByContributionScore()->last();
     }
