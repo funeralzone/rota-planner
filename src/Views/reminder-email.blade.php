@@ -9,5 +9,6 @@
         <li>{{ $assignee->getName() }}</li>
     @endforeach
 </ul>
+<p>Reminder: This is not just the dishwasher rota. It's also the '<b>empty the bins</b>' rota.</p>
 </body>
 </html>
