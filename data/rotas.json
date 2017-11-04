@@ -78,5 +78,45 @@
                 ]
             }
         ]
+    },
+    "07b31206-adcd-4544-bfd0-acf2d04ec58a": {
+        "name": "2017-11-06",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "Monday",
+                "assignees": [
+                    "7fc4bd31-8534-48ac-bce3-0b59e410edce",
+                    "e5953cfc-65df-4719-906a-eb46c0e6b36a"
+                ]
+            },
+            {
+                "timeSlot": "Tuesday",
+                "assignees": [
+                    "9e936e14-df38-44e8-8175-1df8fa36a4b0",
+                    "aa3dc3e1-595a-4775-ae7b-c9f566e8f0fa"
+                ]
+            },
+            {
+                "timeSlot": "Wednesday",
+                "assignees": [
+                    "92c1c12e-8869-421f-a7f2-50e37b76f7e4",
+                    "0bf2d87a-13ca-4104-bb91-d50d8b57dec1"
+                ]
+            },
+            {
+                "timeSlot": "Thursday",
+                "assignees": [
+                    "6a96f0f6-83af-4a73-8b49-b5fa942631ab",
+                    "ce87abac-5d57-41ab-931e-5ee576855eaa"
+                ]
+            },
+            {
+                "timeSlot": "Friday",
+                "assignees": [
+                    "eef3af90-8253-4fab-97f4-1e9095bc9ac8",
+                    "2bd8da5e-9aa9-4544-8988-4dfd68923621"
+                ]
+            }
+        ]
     }
 }
