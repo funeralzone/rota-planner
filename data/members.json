@@ -133,7 +133,12 @@
         "name": "Joy T",
         "timetasticId": "292606",
         "email": "1fwpl9WuCjpviaJTRYqEhF0DEp6Cf2B0xQ7Q9Shs\/KEHpYcDDgLJ\/dv+22F1COSpYbYEV0o4HOkARq611r+2I0sPP\/vpm+vzKSuAhQhuWM8lFuFVVG8ijg==",
-        "restrictedDays": [],
+        "restrictedDays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+        ],
         "contributionScore": 1509803757
     },
     "2bd8da5e-9aa9-4544-8988-4dfd68923621": {
