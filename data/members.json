@@ -264,7 +264,13 @@
         "name": "Laura C",
         "timetasticId": "313820",
         "email": "dyMYNCAcy5LmULg7iwiSvk6P+iUiBIZOvnK13adgJkm6g5Xu\/CxJA1WDyy5IA7\/AEYg1RDQXKBJ+yJ1GdbM0CnS6goX0OBYiPi7QaYvWUSkfWtIU5T1rAg==",
-        "restrictedDays": [],
+        "restrictedDays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
         "contributionScore": 1511618795
     }
 }
