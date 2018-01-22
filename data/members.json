@@ -237,8 +237,14 @@
         "name": "Teresa A",
         "timetasticId": "302575",
         "email": "WYfyBPDjqcUDpbSmiRijRkpQv+Pf5e3eeKiszVMKV81iZ4qrSP5lVHi82gMGHTO9MV2Ld1p\/ney\/Ll2Hqx2S22tj4X4lN42JIdlN90Ky\/FgqrjzpSlxowQ==",
-        "restrictedDays": [],
-        "contributionScore": 1516458995
+        "contributionScore": 1516458995,
+        "restrictedDays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ]
     },
     "0bf2d87a-13ca-4104-bb91-d50d8b57dec1": {
         "name": "Leanne D",
