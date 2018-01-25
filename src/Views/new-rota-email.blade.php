@@ -29,5 +29,6 @@
     <li>Start the dishwasher before leaving the office at the end of the day.</li>
 </ol>
 <p>Everyone is responsible for loading their own dishes into the dishwasher throughout the day.</p>
+<p>Regards,<br>Dishwasher bot</p>
 </body>
 </html>
