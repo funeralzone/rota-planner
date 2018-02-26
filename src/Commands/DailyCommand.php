@@ -30,8 +30,7 @@ class DailyCommand extends Command
         $build = $this->getApplication()->find('build');
         $build->run(new ArrayInput([
             'command' => 'build',
-            'date' => $when->format('Y-m-d'),
-            'daysToBuild' => 'Monday'
+            'date' => $when->format('Y-m-d')
         ]), $output);
 
         $build = $this->getApplication()->find('remind');
