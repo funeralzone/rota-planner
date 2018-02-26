@@ -312,7 +312,13 @@
         "name": "Sarah W",
         "timetasticId": "340377",
         "email": "UyeRtEfVfD5faDy6N\/eN3N5Y6hTAPBZAuN53R6FjdoVYYGTtDvpuIQxvk5Rn5JdJQBWcI1O2CZ5jseAFSq9fRDzbhJUB2hHQK0kHzBlSEXo9mVSOkxqT0wPTGEV\/9Z\/FTO5HBIXBD10=",
-        "restrictedDays": [],
+        "restrictedDays": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
         "contributionScore": 1519644446
     },
     "4213812a-b8eb-4214-a9a0-87935e09bfa2": {
