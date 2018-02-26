@@ -37,7 +37,7 @@ class SyncMembersCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $usersResponse = $this->timetasticClient->getUsers();
+        $usersResponse = $this->timetasticClient->getUsers([]);
         $users = json_decode($usersResponse->getBody()->getContents(), true);
 
         foreach ($users as $user) {
