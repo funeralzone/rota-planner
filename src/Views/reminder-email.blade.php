@@ -3,13 +3,12 @@
 
 <body>
 <p>Hi {{ $you->getName() }},</p>
-<p>Rota assignees for tomorrow ({{ $when->format('D jS F') }}):</p>
+<p>Here are the dishwasher/bins assignees for tomorrow ({{ $when->format('D jS F') }}).</p>
 <ul>
     @foreach($slot->getAssignees() as $assignee)
         <li>{{ $assignee->getName() }}</li>
     @endforeach
 </ul>
-<p>Reminder: This is not just the dishwasher rota. It's also the '<b>empty the bins</b>' rota.</p>
 <p>Regards,<br>Dishwasher bot</p>
 </body>
 </html>
