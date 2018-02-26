@@ -20,7 +20,8 @@ class DailyCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $when = Carbon::createFromFormat('Y-m-d', $input->getArgument('date') ?? Carbon::now()->format('Y-m-d'));
+        $whenInput = $input->getArgument('date') ?? getenv('DATE_OVERRIDE') ?? Carbon::now()->format('Y-m-d');
+        $when = Carbon::createFromFormat('Y-m-d', $whenInput);
 
         $syncMembers = $this->getApplication()->find('sync:members');
         $syncMembers->run(new ArrayInput([
