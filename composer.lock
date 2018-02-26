@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisharrison/timetastic-api-php.git",
-                "reference": "615b66df69c9d56c2ee0af1b0dc6c50899c2c372"
+                "reference": "9a1f0c3aeb14ac8dbd3d57289ffb16a652cce159"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisharrison/timetastic-api-php/zipball/615b66df69c9d56c2ee0af1b0dc6c50899c2c372",
-                "reference": "615b66df69c9d56c2ee0af1b0dc6c50899c2c372",
+                "url": "https://api.github.com/repos/chrisharrison/timetastic-api-php/zipball/9a1f0c3aeb14ac8dbd3d57289ffb16a652cce159",
+                "reference": "9a1f0c3aeb14ac8dbd3d57289ffb16a652cce159",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                     "email": "c.harrison1988@gmail.com"
                 }
             ],
-            "time": "2017-10-03T16:08:12+00:00"
+            "time": "2018-02-26T11:16:42+00:00"
         },
         {
             "name": "container-interop/container-interop",
