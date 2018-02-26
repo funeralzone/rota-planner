@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a692d431014b7c57d9e1c42a3929a1ec",
     "content-hash": "2acfadcc82f7e7547a38d9ea29c54bad",
     "packages": [
         {
@@ -46,7 +45,7 @@
                     "email": "c.harrison1988@gmail.com"
                 }
             ],
-            "time": "2017-10-19 13:02:17"
+            "time": "2017-10-19T13:02:17+00:00"
         },
         {
             "name": "chrisharrison/timetastic-api-php",
@@ -54,17 +53,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisharrison/timetastic-api-php.git",
-                "reference": "bb5fe775392057c993b2ac7bbafc6982aa984c54"
+                "reference": "615b66df69c9d56c2ee0af1b0dc6c50899c2c372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisharrison/timetastic-api-php/zipball/bb5fe775392057c993b2ac7bbafc6982aa984c54",
-                "reference": "bb5fe775392057c993b2ac7bbafc6982aa984c54",
+                "url": "https://api.github.com/repos/chrisharrison/timetastic-api-php/zipball/615b66df69c9d56c2ee0af1b0dc6c50899c2c372",
+                "reference": "615b66df69c9d56c2ee0af1b0dc6c50899c2c372",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3",
                 "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
             },
             "type": "library",
             "autoload": {
@@ -73,13 +75,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Chris Harrison",
                     "email": "c.harrison1988@gmail.com"
                 }
             ],
-            "time": "2017-10-02 12:33:45"
+            "time": "2017-10-03T16:08:12+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -110,7 +115,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14 19:40:03"
+            "time": "2017-02-14T19:40:03+00:00"
         },
         {
             "name": "danielgsims/php-collections",
@@ -150,7 +155,7 @@
                 }
             ],
             "description": "Collection classes for PHP",
-            "time": "2017-09-12 11:54:15"
+            "time": "2017-09-12T11:54:15+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -217,7 +222,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2017-09-18 20:24:46"
+            "time": "2017-09-18T20:24:46+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -282,7 +287,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-06-22 18:50:49"
+            "time": "2017-06-22T18:50:49+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -333,7 +338,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2017-05-20 23:14:18"
+            "time": "2017-05-20T23:14:18+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -398,7 +403,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-07-17 09:11:21"
+            "time": "2017-07-17T09:11:21+00:00"
         },
         {
             "name": "illuminate/container",
@@ -442,7 +447,7 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2017-09-04 14:02:58"
+            "time": "2017-09-04T14:02:58+00:00"
         },
         {
             "name": "illuminate/contracts",
@@ -486,7 +491,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2017-09-21 14:39:54"
+            "time": "2017-09-21T14:39:54+00:00"
         },
         {
             "name": "illuminate/events",
@@ -531,7 +536,7 @@
             ],
             "description": "The Illuminate Events package.",
             "homepage": "https://laravel.com",
-            "time": "2017-08-30 21:07:22"
+            "time": "2017-08-30T21:07:22+00:00"
         },
         {
             "name": "illuminate/filesystem",
@@ -581,7 +586,7 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-            "time": "2017-09-13 13:37:01"
+            "time": "2017-09-13T13:37:01+00:00"
         },
         {
             "name": "illuminate/support",
@@ -638,7 +643,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2017-09-29 14:47:24"
+            "time": "2017-09-29T14:47:24+00:00"
         },
         {
             "name": "illuminate/view",
@@ -686,7 +691,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-            "time": "2017-09-21 14:22:04"
+            "time": "2017-09-21T14:22:04+00:00"
         },
         {
             "name": "league/flysystem",
@@ -769,7 +774,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2017-10-01 08:00:21"
+            "time": "2017-10-01T08:00:21+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -822,7 +827,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-02-06 22:02:47"
+            "time": "2017-02-06T22:02:47+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -865,7 +870,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2017-01-19 11:35:12"
+            "time": "2017-01-19T11:35:12+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -913,7 +918,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-09-27 21:40:39"
+            "time": "2017-09-27T21:40:39+00:00"
         },
         {
             "name": "philo/laravel-blade",
@@ -954,7 +959,7 @@
                 "blade",
                 "laravel"
             ],
-            "time": "2015-12-04 09:42:42"
+            "time": "2015-12-04T09:42:42+00:00"
         },
         {
             "name": "phlib/encrypt",
@@ -992,7 +997,7 @@
                 }
             ],
             "description": "Generic class for performing encryption",
-            "time": "2016-04-06 14:11:38"
+            "time": "2016-04-06T14:11:38+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -1035,7 +1040,7 @@
                 "invoke",
                 "invoker"
             ],
-            "time": "2016-07-14 13:09:58"
+            "time": "2016-07-14T13:09:58+00:00"
         },
         {
             "name": "php-di/php-di",
@@ -1097,7 +1102,7 @@
                 "dependency injection",
                 "di"
             ],
-            "time": "2017-04-11 19:42:20"
+            "time": "2017-04-11T19:42:20+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -1134,7 +1139,7 @@
                 "phpdoc",
                 "reflection"
             ],
-            "time": "2015-11-29 10:34:25"
+            "time": "2015-11-29T10:34:25+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -1198,7 +1203,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2017-08-28 11:42:41"
+            "time": "2017-08-28T11:42:41+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -1248,7 +1253,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-08-23 11:42:00"
+            "time": "2017-08-23T11:42:00+00:00"
         },
         {
             "name": "psr/container",
@@ -1297,7 +1302,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-06-28 15:35:32"
+            "time": "2017-06-28T15:35:32+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1347,7 +1352,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -1394,7 +1399,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -1442,7 +1447,7 @@
                 "psr-16",
                 "simple-cache"
             ],
-            "time": "2017-01-02 13:31:39"
+            "time": "2017-01-02T13:31:39+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -1524,7 +1529,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-09-22 20:46:04"
+            "time": "2017-09-22T20:46:04+00:00"
         },
         {
             "name": "slim/slim",
@@ -1595,7 +1600,7 @@
                 "micro",
                 "router"
             ],
-            "time": "2017-09-21 08:03:31"
+            "time": "2017-09-21T08:03:31+00:00"
         },
         {
             "name": "symfony/console",
@@ -1664,7 +1669,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02 07:56:07"
+            "time": "2017-10-02T07:56:07+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1720,7 +1725,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02 06:49:52"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1769,7 +1774,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02 06:49:52"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1828,7 +1833,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14 15:44:48"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "symfony/translation",
@@ -1896,7 +1901,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02 06:49:52"
+            "time": "2017-10-02T06:49:52+00:00"
         }
     ],
     "packages-dev": [],
