@@ -79,7 +79,7 @@ class BuildCommand extends Command
         $existingRota = $this->rotaRepository->getRotaByName($firstDateOfWeek->format('Y-m-d'));
 
         if ($existingRota) {
-            $output->writeln('<error>Generation already complete.</error>');
+            $output->writeln('<error>Generation already complete for week beginning '. $firstDateOfWeek->format('Y-m-d') .'</error>');
             return;
         }
 
