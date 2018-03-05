@@ -37,6 +37,8 @@ class SyncMembersCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
+        $output->writeln('<info>Get all users from leave system.</info>');
+
         $usersResponse = $this->timetasticClient->getUsers([]);
         $users = json_decode($usersResponse->getBody()->getContents(), true);
 

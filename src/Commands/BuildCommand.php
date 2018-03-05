@@ -88,7 +88,7 @@ class BuildCommand extends Command
             $timeSlots = $timeSlots->add(new TimeSlot($timeSlotName));
         }
 
-        $members = $this->getMembersWithHolidayEntitlement($firstDateOfWeek, $timeSlots);
+        $members = $this->getMembersWithHolidayEntitlement($firstDateOfWeek, $timeSlots, $output);
 
         $generatedRotaArtifact = $this->rotaGenerator->generate(
             $firstDateOfWeek->format('Y-m-d'),
@@ -106,12 +106,12 @@ class BuildCommand extends Command
         $output->writeln('<info>Notifications sent.</info>');
     }
 
-    private function getMembersWithHolidayEntitlement(Carbon $firstDateOfWeek, TimeSlotCollection $timeSlots) : MemberCollection
+    private function getMembersWithHolidayEntitlement(Carbon $firstDateOfWeek, TimeSlotCollection $timeSlots, OutputInterface $output) : MemberCollection
     {
         $members = $this->memberRepository->getAllMembers();
 
         $membersWithEntitlement = new MemberCollection;
-        $members->each(function (Member $member) use (&$membersWithEntitlement, $firstDateOfWeek, $timeSlots) {
+        $members->each(function (Member $member) use (&$membersWithEntitlement, $firstDateOfWeek, $timeSlots, $output) {
 
             if ($member->getTimetasticId() == null) {
                 $membersWithEntitlement = $membersWithEntitlement->add($member);
@@ -119,6 +119,8 @@ class BuildCommand extends Command
             }
 
             $restrictedTimeSlots = $member->getRestrictedTimeSlots();
+
+            $output->writeln('<info>Getting holiday entitlement for ' . $member->getName() . '</info>');
 
             $holidaysResponse = $this->timetasticClient->getHolidays([
                 'userids' => $member->getTimetasticId(),
