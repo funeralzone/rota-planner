@@ -43,4 +43,15 @@ class MemberCollection extends Collection
             return $member->isAvailable($timeSlot);
         });
     }
+
+    public function filterByTimeTasticIdWhiteList(?array $timetasticIds): self
+    {
+        if(is_null($timetasticIds)) {
+            return clone $this;
+        }
+
+        return $this->filter(function(Member $member) use($timetasticIds) {
+            return in_array($member->getTimetasticId(), $timetasticIds);
+        });
+    }
 }

@@ -7,6 +7,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class DailyCommand extends Command
@@ -16,6 +17,7 @@ class DailyCommand extends Command
         $this->setName('daily');
         $this->setDescription('Run all the commands for the day');
         $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
+        $this->addOption('team', 't', InputOption::VALUE_REQUIRED, 'An optional team (specified as config file name, ie "fz")');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
@@ -31,7 +33,8 @@ class DailyCommand extends Command
         $build = $this->getApplication()->find('build');
         $build->run(new ArrayInput([
             'command' => 'build',
-            'date' => $when->format('Y-m-d')
+            'date' => $when->format('Y-m-d'),
+            '--team' => $input->getOption('team')
         ]), $output);
 
         $build = $this->getApplication()->find('remind');

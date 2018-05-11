@@ -1,352 +1,254 @@
 {
-    "edd881ce-6913-4b68-b220-9bf3ab52782f": {
+    "e28ec019-f866-4516-85cb-caa5402b38d2": {
         "name": "Kevin H",
         "timetasticId": "240737",
-        "email": "r3Z35gIXlkf3dQVSkkV9VZeQdTtY5s+4AQ+ZY7ICr5smil4VYTbhEnJRQYsTwd7Rdnk0RoZZ8hJiNfmUCnrX0jhjHE8w1FtHN4NIIpqPXqY1WIQBRAHb7Futoc0umz\/Q+sb+hjvcVX4=",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
+        "email": "tUQOFc5NT\/V6S4FWnTtdDYnmfEBCZmy622h6qfr\/H4tO566Oa1BkEx2qlk14QIM66XgQrK+i87EGzMIhI0le78u7BK4XVpoGEyMYq6TNkAXtd68K0O8x7U0UbkylZt8KxCpyl1\/kodY=",
+        "restrictedDays": [],
         "contributionScore": 0
     },
-    "57232476-a78b-4167-8d47-e7a3044e2d46": {
+    "c872f810-65b5-4b9b-b235-981fa796b450": {
         "name": "Adam A",
         "timetasticId": "279789",
-        "email": "ITCaVuPYqfLoV7J\/jVt7uxHwABN2nUvB0KKtKAQ+1vRdWGUlwWsfcaHmyKyQIAllCVlqZGsoNv6ln\/chuqZsqST\/gJfRynqTPMr6uYPwai2SFNb5iNZFvSrBjw8Py+RyqQkDw9JF5O4=",
+        "email": "qAv9WXrQP5Clx0pe4GkviTOweCsjCy1QS5WKrBLga79SPZoyprfpR+\/t6WeBl6o3hDx7MRQCUt0tK3eLnFFwsygNsJ7myHqr0DTfwATFTAmqIrCEBoObhcH6iIIcCe3Q62L1IyC0CBA=",
         "restrictedDays": [],
-        "contributionScore": 1525534145
+        "contributionScore": 0
     },
-    "e551e798-bd09-4638-99f5-7060d3aeda34": {
+    "647bfee5-89cc-49d0-a7d1-380ce0b18d23": {
         "name": "Andrea S",
         "timetasticId": "289557",
-        "email": "lm1yrtKOXgdNV6LLZGyySlEdITelXZuB8ag4kVwnqz0J7MksWjyoNShfoAU0kcpnFkS56LRQ0y5Sk3o5iPvWPhi88CQa1F0RUR4NHtXnp9cITJGf52T5Jg2LnmPpe9GW2EW5c0S0myA=",
+        "email": "iz\/nRhHnEb4c8zQeqpBiJ1C3posrorLjU66sXzT5FtrQKhmHJ+NdnnCl5qObpibrutfd5nFuhbcjgH0g\/WhFY8IEpHlG4c6I\/7RXoQvoJY+VA9Xmj66sEd6ohH7eBX49Q79lM8Treyk=",
         "restrictedDays": [],
-        "contributionScore": 1524929109
-    },
-    "92e65bfc-c72c-472a-ae75-ccceb4ad7a4d": {
-        "name": "Cassie D",
-        "timetasticId": "287801",
-        "email": "otyTt1agq\/vxBs19R2jj2rOiYL9ZDH97XhXgUSctI01yMmz7\/WFiUmNNYt+J9V3km3aRUhH2tC72erFktNeeWSWzYIC6oLlHMRjlrctRA5M\/JqWfLCD9jA==",
-        "restrictedDays": [],
-        "contributionScore": 1525534146
-    },
-    "63f2a7e2-12ff-4f0d-a1ac-767c04b4246d": {
-        "name": "Catherine B",
-        "timetasticId": "241067",
-        "email": "Vlf+fdH4w3Gm9\/P2LpOhTYhMewudUF1oa1vEM1BJm6WywG0bag1wV0jDGxFLw4Xwl1zapUKnvWnoeUc7y8hYVwdbkDs\/6CTLsFygzqmmBDehstljdE61CqSYFUMqKHWLaTd4JQDqd38=",
-        "restrictedDays": [],
-        "contributionScore": 1524324078
-    },
-    "465a2254-f777-4a81-a757-cb402bdd6910": {
-        "name": "Chris H",
-        "timetasticId": "241075",
-        "email": "AzbWoqWSKgJ8rn3P0E3AK7BgML3PgCfOuq5f32Pl5ld\/EFrmbi\/MEOxWcAO33q+UxJcgl+Ukj3A+E4Z2dtL4RCvlU+JTdyLOJ87KmAE5gsaEbzd9Dfr18hXBYPg6ZVBymF4OT0cdRPs=",
-        "restrictedDays": [],
-        "contributionScore": 1524324079
-    },
-    "a789a1bb-1dd9-493a-a722-6041f5b0ce4b": {
-        "name": "Dan B",
-        "timetasticId": "241065",
-        "email": "bAxLsMTy+dlXzZXGGnQj8lJPwiWabEoxlrSR2C4z17zWxXITtW78AQHn1dI\/moOApgNVcNQoHGUs2H11DVOHf1bqUCSRLS8tApsMQ7ulkXYL7Np9Uv+DsA==",
-        "restrictedDays": [
-            "Tuesday",
-            "Wednesday",
-            "Thursday"
-        ],
-        "contributionScore": 1525534149
-    },
-    "804472c4-c764-4a15-b5db-4e4230fa7f7c": {
-        "name": "Decebal D",
-        "timetasticId": "241074",
-        "email": "3jl1cmUMdffteteyE9\/wuI\/v1vXkeHvK9li\/w4KGRPYyE9lKDTreSvJRvHBRaXBzmTuREyitcbe3tQFlms6rEpJ+JF7bQsNfCasFjI12Uut0lZgLEtgaiQ==",
-        "restrictedDays": [],
-        "contributionScore": 1524929111
-    },
-    "0f7ee10b-725d-4137-bdbb-3ede2fb5e1c6": {
-        "name": "Ed G",
-        "timetasticId": "241061",
-        "email": "cIGfK7A2kRXft\/jE7vFLZwl6hv4uTv5opm08bNZHhhI+ZrFJxEQ6nhHD3pCzk53jvg3bcEhKFT\/4OqeK\/Y3pghbecqzNsiJNwRY\/DzUK4U9PPAh4mG1dMQ==",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
         "contributionScore": 0
     },
-    "bf726e3a-86dd-40ef-a0a0-bdc44fbeb301": {
-        "name": "Ellie B",
-        "timetasticId": "241063",
-        "email": "iPb+QeIZCpqzge8jmI1h+n\/M4DXpRXQiVysf1R1EksDtEMvLy\/MtHA\/L5MutiSc8b+rd9DVqZbkre5ySPjkRvfQy0pF9m2t6j32zFfuLD57TYuvB7TG1ug==",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 0
-    },
-    "85ef2430-433e-4cb5-939b-f8a384e75c5d": {
-        "name": "Emily S",
-        "timetasticId": "243515",
-        "email": "6PwgfZ7+OPlKk\/sQ8qo1+KL7ZOxeytTcp3zesTGo092DY7KaHy0aOz6Ac57BK+SHcH+JGdRGK07K6XmucyGmSHc9yXP324+E5Lnv\/fdrCy5Szt4K9XOLZ2Pm2lrGvSnid9ORyG53\/i4=",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 0
-    },
-    "604c04ee-91de-4d9b-ab08-8a202f2ca9c4": {
-        "name": "Gary M",
-        "timetasticId": "241066",
-        "email": "7hB6CgY9pNYvueYtpAy+sLr\/DWQlUl\/hQRxMZfPDP8phbS4OoMIPrC7JDiQGjYfvoHIUeqKdhupvBWCyNDfV+G1nhoZ4Iq8He7qVI843fivhstdGgo+LWg==",
-        "restrictedDays": [
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 1523719038
-    },
-    "9e936e14-df38-44e8-8175-1df8fa36a4b0": {
-        "name": "Holly M",
-        "timetasticId": "299983",
-        "email": "vXV3RjUbanuYFRbD9goIwLJVoLjomf1J1m3OyOzMVHIEcpTtTqRQwGdpMvn6dyQKMbCH67KsK1mrQf22hersT5zfCsAWY7MtW+5W1SRtY3tvxdFTWBKAtw==",
-        "restrictedDays": [],
-        "contributionScore": 1524324086
-    },
-    "aa3dc3e1-595a-4775-ae7b-c9f566e8f0fa": {
-        "name": "John C",
-        "timetasticId": "243513",
-        "email": "prUotbZ6KMh+e53BDhVfmzCjtIy7SQmVpBaNM0t9nJxMTTZSohKQqu9o+BgzTCsZzmerUN6AjIhQf8kjrV5Cq4pSsNdxygQaK1YigPFpOH9IHr+bLZbCjg==",
-        "restrictedDays": [],
-        "contributionScore": 1525534150
-    },
-    "92c1c12e-8869-421f-a7f2-50e37b76f7e4": {
-        "name": "Joy T",
-        "timetasticId": "292606",
-        "email": "EdHDGKE2S7ZXTR7Q5qwjCjDYGRqnCpMQDvFDAHTHYuuYn\/WeiOQTO6asMZ\/0Nc\/vOKekz5I9UdGx5lN30RgpSXzW6ptJqrmiEGbix6lzY4EFW26r8ZRV7g==",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 1511618803
-    },
-    "2bd8da5e-9aa9-4544-8988-4dfd68923621": {
-        "name": "Keith E",
-        "timetasticId": "241071",
-        "email": "CeE72za3d3Uk6msGTACpNHmHsimhtdAUiLzQP3p9rjn5BRAFpIP3tBwUmfnfYPLXAMmaz1QOHVAtKfCnvHQljdDHJnA45OKE4F86ItKl8QlN9RMoTYLiIw==",
-        "restrictedDays": [],
-        "contributionScore": 1525534144
-    },
-    "eef3af90-8253-4fab-97f4-1e9095bc9ac8": {
-        "name": "Kevin B",
-        "timetasticId": "241072",
-        "email": "8svncGZ6aOt3EMNIeSvBQKWRkiTQLroPk8L\/cRi9elEaeuC6FmH0hvBMOi9xSBd+TKmpBcAWC2wmYDOtT2ktLVx7pPnJQ\/gG+kbmord\/mQ2k6yrdlbowPw==",
-        "restrictedDays": [],
-        "contributionScore": 1524324084
-    },
-    "2e00bf29-c389-4f01-a73c-1c1e56216487": {
-        "name": "Maria R",
-        "timetasticId": "268365",
-        "email": "Dek3FRGOSz6dnBmD2wdBu9AtspAcTUrJ30+Ujo4Nv7x8UVHNB8jdDr0bbGpIqVp7uFNDK6YbozijRfwT53Xg8oE+E+HZ9xNJIVKwBkjuUw6hl2L7O\/I2Dw==",
-        "restrictedDays": [],
-        "contributionScore": 1524929108
-    },
-    "e5953cfc-65df-4719-906a-eb46c0e6b36a": {
-        "name": "Nadeen C",
-        "timetasticId": "303386",
-        "email": "b2CwbqLY\/bfO9vYlLbvvRX63Txitht9jqPUoEU1WB\/VVN3eVt72VricCU0sR07VBZ5qPVOToByM3uh188efK7POAuuwrfmAJeM0fNArNwwfUKsERtIK9yg==",
-        "restrictedDays": [],
-        "contributionScore": 1524929115
-    },
-    "ce76fc1e-c695-402e-9d80-e10ae545002b": {
-        "name": "Pedro N",
-        "timetasticId": "290187",
-        "email": "GbALuUP9NfeOzS\/OKRGu9cVziQZFU2Eiut9rNk1erlCN82nbzaswQVLMdpbcZww82V5MPQM7rINtPnAlQkET\/zwOO697ocVj7zjZWR9TBU6F7zARTlOkzJK0QPvhM7e4Mdv0Z3r0nPU=",
-        "restrictedDays": [],
-        "contributionScore": 1524324080
-    },
-    "261248f7-55fd-4741-9ff5-69f0eff7318e": {
-        "name": "Richard S",
-        "timetasticId": "241069",
-        "email": "bBymKF2exsVgqHaqFTw3qn\/OQLZZU\/+bR2gLAHXQvxIHYNmzPzWE5sS7i6G87JgLx5APpJzkcW5\/OsW\/x2lNzD+H1UpLjecUbjNh5BYD1KoJlvYuEsz2Qg==",
-        "restrictedDays": [],
-        "contributionScore": 1524324081
-    },
-    "5a6dda50-e94e-470b-8fd3-f8109fc85928": {
-        "name": "Richard W",
-        "timetasticId": "243519",
-        "email": "00Tob0II37mzcLcdAWJfO197PWbzhnWnzREI29YsaJMCWFzjUSh5qZuqVvrzLnKYAyLIBkdR65rHOXfLbPc1QQDY44mnLNf1ZmE4VfRUsOEO\/9Rk1GFuejRCVjC82CvE04BhKSfUAiQ=",
-        "restrictedDays": [],
-        "contributionScore": 1525534147
-    },
-    "2aceb102-735c-4149-9a4a-633f9053c23b": {
-        "name": "Sabin P",
-        "timetasticId": "241073",
-        "email": "G+5D\/yjmpwOCJ+m17zr0Tx9477HotT63TexPbwbkS0TXcEYi6zC1xVTJYNvlE2MvHhNvdwiVAPpz6sahyZMYbgTOnempGuqFHtjXvg9Px4OAP+mP3ySvPw==",
-        "restrictedDays": [],
-        "contributionScore": 1524929107
-    },
-    "12a1b1d4-34c8-47e7-b1d9-cd91e6107b3b": {
-        "name": "Sam H",
-        "timetasticId": "241076",
-        "email": "s3fKgHl1MdonFJjeOpaQuGV6aZ76cg5osAoaButmYti5qHonW52f520r5N8lMUtGN6jaftDdXj2x1L8gDYVlRI0PFu+ROy5HgV0e2JiXRz8jK0vy5s\/RomTKeKM9jtcq7IzorI8MyB8=",
-        "restrictedDays": [],
-        "contributionScore": 1524929110
-    },
-    "8e52fa55-c97f-49a8-9384-3a421bc1c104": {
-        "name": "Sangheethan S",
-        "timetasticId": "243557",
-        "email": "zYlpscDhZ\/YIp\/ZKOI\/qMBFcJxPwtVa2qCo4cAEeSqJDLgJ3t0YdXtXFV3ySRJYDouiYpD1jexVZGPpocO1yUhPLdBfY0yaMtYmwm4DLJR+Hy5NDsvCa+Q==",
-        "restrictedDays": [],
-        "contributionScore": 1524929114
-    },
-    "fe114cd4-39b8-4d06-987a-26981eaa11a5": {
-        "name": "Sarah E",
-        "timetasticId": "241077",
-        "email": "jr8qp1610l2EMx0eSWBgFK4norG4bRde9Ts7IrsvPG2s39yx0HKM3crCX47P4JZSk04hcfesOqHGOznJXb1uhCczaNhSW32Jj8US7n5Y64LLtabChWqFjg==",
-        "restrictedDays": [],
-        "contributionScore": 1524324083
-    },
-    "70573a78-39f5-4c67-8a89-c9061d45a95b": {
-        "name": "Sergio C",
-        "timetasticId": "260131",
-        "email": "yYBbM4l14oaSERIjOrpkFD9Q+ir\/14hqy2XL1jnULJXKBqLliBCqTG7pOwAg5A70hUvXsOnuP49rVToMmv0e6rDp3QaLa8\/cJY1rYKvbZKbQyhfezZsBVZYtGwEVTuWHDUvstpnCLUk=",
-        "restrictedDays": [],
-        "contributionScore": 1524324087
-    },
-    "6a96f0f6-83af-4a73-8b49-b5fa942631ab": {
-        "name": "Silivina C",
-        "timetasticId": "241070",
-        "email": "TFuO4\/ZWl1J+bR2Li77t98UQMTBN3JbG6oGe+J\/S\/YvcwU2pqpqd6JuyQAe934eaeY\/\/XEf20GxwwM4CNvyvQVXmT1c7E4RKNHsLZvdvkj2PmJHv0Z+ezw==",
-        "restrictedDays": [],
-        "contributionScore": 1524929116
-    },
-    "ce87abac-5d57-41ab-931e-5ee576855eaa": {
-        "name": "Teresa A",
-        "timetasticId": "302575",
-        "email": "OWtc7g+u33U\/DntDbVRzQp7qsku7AelePHqSLsPjzoNOiNwsLWY95377jhAOgQY9uUntDQTy1vFcuilL1eHIMxy8qYg4v+QfK9FWpv7uvnQ+8xf5J11N9g==",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 1516458995
-    },
-    "0bf2d87a-13ca-4104-bb91-d50d8b57dec1": {
-        "name": "Leanne D",
-        "timetasticId": "305992",
-        "email": "4OZdAnmxICc+bgns7RORQV1S9rqQ0WGJnYxUWzx8eLdj5w3sEAoy82JWC2sEnEMb0RaExPPgon1ascsOqV+nbyMSqeP5pGh2WelyUC781Mz3eLFi3+DVSw==",
-        "restrictedDays": [],
-        "contributionScore": 1523719045
-    },
-    "0a36abf1-246b-44a5-971e-11d74ad5a4dc": {
-        "name": "Matt R",
-        "timetasticId": "305995",
-        "email": "EKYAs9rww8hpSNVIchQv1O4AUZNWpF+0HiAOjQhW4T6WQuoCgOkfuziPyNzDcfsLPAhCEYgAFB3KJdE9lZHrgG99S3+3WIKWoEVXD+g5KD4r7lOdjvZ1rw==",
-        "restrictedDays": [],
-        "contributionScore": 1524324085
-    },
-    "7fc4bd31-8534-48ac-bce3-0b59e410edce": {
-        "name": "Matthew T",
-        "timetasticId": "308296",
-        "email": "dAsKMpwbILldS5e52V5Gmj4pBrv+xdLaNZlKJL8pIbfOd6IHDEo+R+AHzNgtHhIi6xL7ZENgZ5mbUPRxYrXZNK6fY4kBUmqUvF2oNaVbzUlbj7wgrC6xoKF1RYKAJDYG4E2W4+\/2AXw=",
-        "restrictedDays": [],
-        "contributionScore": 1523719043
-    },
-    "b1953127-080d-4007-8ee2-f136ede03124": {
-        "name": "Laura C",
-        "timetasticId": "313820",
-        "email": "xzsAjg2dxEk9IedkoSozd1fiXeXvVA+efgqLiZBJpARldm6IHAzfbfHoUMeQg\/2gD2zpppxh0gsgOHfUQBt7TwE9h9U0gTANbcLCrXyCZf9Y9tpUWWiLQQ==",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 1511618795
-    },
-    "a3459eaf-6bb5-42c0-923a-0906ed91c744": {
-        "name": "Johnny K",
-        "timetasticId": "327826",
-        "email": "ZM7oV6F5SCM8ipGaU9T4K6AxU6QurTVPeWUCcFCii7j9TL964xzlb2eUXPyl4unXwvZX7LQSM6ptcRoOzagr\/jbHBGJEgucGcjZ3pl86r\/+MwwpVpzjNkg==",
-        "restrictedDays": [],
-        "contributionScore": 1523114022
-    },
-    "c9892223-f750-4ddd-bf5e-8e544ac7d1a7": {
-        "name": "Stephen N",
-        "timetasticId": "333295",
-        "email": "DBYnoW+NquzzSRMYZwuUtvbfi9CF1AaGOqNM3g5HWTO0S6U3kki6Iw81igIfFC8IQ9PvFtCdo6sONV4pM+p\/wVEMJzTNhybPMaRMTxKp9AzXNS\/L+52kwvrJPcXRR054wrtRvzI6Px0=",
-        "restrictedDays": [],
-        "contributionScore": 1525534143
-    },
-    "2beb6c4a-9e27-45ec-b926-9e9d3e1d429f": {
+    "26db453b-fc30-4b1b-9da4-851c04bb829f": {
         "name": "Ben A",
         "timetasticId": "335259",
-        "email": "QzOoaNRYIg+KFZChbLPUSdgXsoo9+fKJyZ6P\/hG+ycu6MwbmXSHtK5zVRDDBMi4ct8zUzzvgxcjFt3iiH+23B410a85IzU4iIXjvM0HzLciGN06nKt5iCw==",
+        "email": "3Bl6wRT05VMWNmhaODiM3lk6bzhxtPVvPWyXXMuq3193XToJMMQhyoumhyYsvXrFmd8F2v23\/6z2ucL\/k6OBTYWNfpq+kDBRh+3rSUIOBZ3avfzRzi1vKQ==",
         "restrictedDays": [],
-        "contributionScore": 1524929113
+        "contributionScore": 0
     },
-    "1de542a9-4006-4ab6-9d27-de99575f83a6": {
+    "057b72cc-0d14-4bf8-9c8c-30608526a6c0": {
+        "name": "Cassie D",
+        "timetasticId": "287801",
+        "email": "VckG4p\/aFLEUJAet2clfT5SpsrCJYXK7ySb0L2by7kKn8fok\/k604+rflmbWBavim+6IR2ZjMcxTTRFkCbmzjLNhPAKGpFULd4FI4iIFR19LrHlPTc4z\/Q==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "6fc609d3-d3d1-4ba8-8cd3-ce2fe6c2adaf": {
+        "name": "Catherine B",
+        "timetasticId": "241067",
+        "email": "boddX7Lk66YnF4T8\/6qKC1MX9xT4nc91bhXMaHj3jBKBoCOIdGQVm4pVyAyOJ3uq7Qli5woJrZjG308rBsXfAQsuoQ\/aZ096a3wXEsRIbuc6\/SMfRHOkg0\/ssMZ8lQOipHQ54LhDDGQ=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "481e1bf3-8f18-4567-a498-f315ba24fc88": {
+        "name": "Chris H",
+        "timetasticId": "241075",
+        "email": "P+EoQ4RWkDtyzhyD7nF3X\/gbFzShGIkhPPjqrG4grwby3mUvPQ7h0+v07tgt2mEaSDr+ULH79GdlPcNec5P3UJnPSHCbxRgx8OEkbcszSTIjgG10sqBGMSS6Npq+lc8\/0qOU7FcXudU=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "87685d70-0a35-4a8b-bdc7-a96913b054da": {
+        "name": "Dan B",
+        "timetasticId": "241065",
+        "email": "J6OkMbN7PAKbwoA\/IkZ+us9ph4wbfCHGT0lAj\/\/S\/R4v+Kj0Uimj94IHOHJliQJqJ3NAF9fI2Lw26hNP24ib5i4yYiNnnvOcAEK\/TFRc\/c564aNYQfOYQA==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "0058a652-805a-473f-8c1a-9b5a65d486d8": {
+        "name": "Decebal D",
+        "timetasticId": "241074",
+        "email": "gpLbILV4Byjf5hEhIVTYuQ4HSVyJ3oH6TTkoOchqY7NbPG4WN6gd+6xwfLP97rcUUeiNUkaIC8IrPz9grNCKK6ta0jcjNZjEO5NLrb4vhn+wT3r2RXvaxg==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "4c16db80-701a-4835-b159-a1b535fc9420": {
+        "name": "Ed G",
+        "timetasticId": "241061",
+        "email": "GDK5npPhi15e9MOaw+F0dINlndzq3o7qeaC7JX0oMGBmYL+sn4XkU\/i2ILXjTgmDLUQoimhZ4ihOKviiKlBjUHV4NzlhsKKrvtTwPJ+Z6MwDYmO6u0R6bQ==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "dd9e56ad-13de-4d34-b781-2797108406a4": {
+        "name": "Emily S",
+        "timetasticId": "243515",
+        "email": "\/J4cDdL50LrW3hzhrjh1AmvZO9Vm3r5hWKJ7\/QJ8uJtlsgvAKCxW\/trVfNW\/iCRyALAFHUGMOdblRJGD0Ws31w1Wt9hSPI\/aUb\/GbUnCcm70Cq23Srmtzrc0ie26UgxDVYD5NH7tyYI=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "5f279683-e180-4d0d-9513-3e5576ddff3d": {
+        "name": "Gary M",
+        "timetasticId": "241066",
+        "email": "ifsrEPK4pHe9sCXu6XeN+zwWPud+FYuy7FUPY5ZnfvreTjgGqFWKEN2UNfwkK1+j6b\/q6TDU0Zd0G079o7HLcn1ljmGRqOEzyPR\/qTvYNq1ucDsRYhzCtw==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "d905ab8b-98e7-4ae1-bc95-543491fdc48b": {
+        "name": "Holly M",
+        "timetasticId": "299983",
+        "email": "t5l+bQ8DFqiQqcBNTzLzbFA4xcGC3UcgbvepdK2y4BuX1chkruPV0BXF62S9IqefQ2uepkgqJeJBUudjSsKLHpjjweTee\/3JfnvGt4LQdKqp7VI4Y42wLw==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "caa9a34a-ddc7-404e-9627-4fd4d9c93e25": {
         "name": "James S",
         "timetasticId": "338415",
-        "email": "7HVvyMuFYwjL1fMi8sUspDiVEngGcL3btMUuPNFp03tQEYj3IHd5vxK9nmXYSTRz4AhbpLV2L4lVPKgUuoirTSwWcQNA32uYVtyEpJypO6kR02PkraacXQ==",
+        "email": "GSynn\/f\/okXCaJoAMvcaXoHVp5q0vnNFmSTb5kkbrfPVpFmIH2Nmm\/1korQCnCB8Kq8SOq+4yKVLlSAIw55jvoWgji\/YYfxTAR7d\/ec7gIHH6ELVM85Wiw==",
         "restrictedDays": [],
-        "contributionScore": 1525534148
+        "contributionScore": 0
     },
-    "8cfc527c-8077-459b-abb0-8332b8a1cce2": {
-        "name": "Sarah W",
-        "timetasticId": "340377",
-        "email": "WMMNcWq9rx+QOfyYEVf1BBa1JkA83ZCGrGKnP52qixnQ9W4akHrjTQ2sNsLnoe+ZfaTaMU7fQ39RiN+X3\/1jy6C3huPu1\/WMyX35VIxKnDo+NT7MINMAOog+gzf+NNsSJ1V4QntRqkE=",
-        "restrictedDays": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "contributionScore": 1519644446
-    },
-    "4213812a-b8eb-4214-a9a0-87935e09bfa2": {
-        "name": "Jane B",
-        "timetasticId": "341855",
-        "email": "IZ0jkuJt19HYpiwzH4S7X\/pZpFQwlrWb3Y5pDEMYxPRvS3I6crgZA7wtAxh1\/6nYr1CIQWyksceo2Ix7PyhZiH7etsYelmqms49PlpgDWaXSKkPHT+PeyQ==",
+    "b9e9d7e0-84ee-4cde-970c-4b4417440fdb": {
+        "name": "John C",
+        "timetasticId": "243513",
+        "email": "XuZz0MdjEfiQAEkKFdXUvZMKnF20UU89iFP8fjEjYhsx3AMThzN9WF3auXRSlzBfp6AYrpLLQOwFtktcTHnC2tfQp9e4nA5RTA9Fwx\/uMetfMooonxFtfQ==",
         "restrictedDays": [],
-        "contributionScore": 1524929112
+        "contributionScore": 0
     },
-    "6510af22-2d5a-4bb3-bded-feb3c0aa3531": {
-        "name": "Nicole G",
-        "timetasticId": "344559",
-        "email": "YljULaEfNJ0KvtMtxx6SSIuY5dOt4RP1Y4jnaZAyToZiiBqr\/KWCHSnRAKpZmZ2dg0SOitPVVGbte1Rp\/2XRofQYqtxkQflTr36ZJwy8qsacHrMVV8gvroXpcOBH4WkWvek1pVmGxtA=",
+    "27fa8d94-4f7e-48f5-8f90-06abf8cd557f": {
+        "name": "Johnny K",
+        "timetasticId": "327826",
+        "email": "SIzq7ngloc\/FcvfZ9LKQKV8rYjvVoYhmdmUzbyuGAnTw9+b99PpghBCr\/0pUcDKgW1DLpG6zBxsKAWXNXd0vwy2S5+zmNYzTWzFx+wzheG+WELYbX5H+yQ==",
         "restrictedDays": [],
-        "contributionScore": 1524324082
+        "contributionScore": 0
     },
-    "5c708f99-93c3-49a8-8e32-d3ee424db6b7": {
+    "6d3666aa-7c17-4f57-b051-f668446e09e6": {
+        "name": "Joy T",
+        "timetasticId": "292606",
+        "email": "u128+6aCpxI6lP\/zw\/o8wWK0cNy6OqfCZ+pL4I7wZ1tlI4tW9+nQVTFijDVRMvJaUnOy1Vb75ycg7lHcL9qh4i2T5fEOxWjWyFDTers2\/LUo6\/X5rf6chg==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "8b65a608-8408-43b1-b1b3-32758a0c9cf5": {
+        "name": "Keith E",
+        "timetasticId": "241071",
+        "email": "yBMX9d9iYtIyHiqA\/F8pujj54YsPbC0uA40l2jwy\/7AI7Acpp+s8\/tncZcvqYMpBUx8mufE8o39dp6GXgzz6+MikSwcct4bkpyQRx6SINR1c5pmZEq0mRA==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "eab0987c-e21a-47cd-b525-cdd5687ad28c": {
+        "name": "Kevin B",
+        "timetasticId": "241072",
+        "email": "YEQRYXdeoBDJL2m44LkCZLoHyt\/Y\/jC8R+ckO2ORv+zr7fCNXkzO6hyEYmE3iQHHM\/XxV7tWdN0Vur\/t4ZvSDUI8uolLq2cjSxZ\/nF9cR4WiaM3tgRbzGQ==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "59281cfc-644d-40e2-bf71-500063da82d2": {
         "name": "Kimberley J",
         "timetasticId": "361218",
-        "email": "vBaIxK+bVfgLpQ61O3WgWmmq7SK51ufTxrTO4hlS7+sLhKc\/VfaTmNNAd2ozO+Bs1eZpPwQj+XalyVTyuah\/Y5Trx0v0QA39dNUnbP1iuyIKyKpiCdzOtGtVLofgs6OPQEtAOAKqozQ=",
+        "email": "bZBajKInrjd8YiiPla72NYYlWmrwKdeDuDnbOu0RKxP881WzNPv7N4AQIeW8Nt\/0TNm2ftDgBcP3QfH1uetEpCcqFG8M0O\/l+ZfgcfXuwvkue0wX18\/mevd4PNw9YcaAYsDniOIelUg=",
         "restrictedDays": [],
-        "contributionScore": 1525534142
+        "contributionScore": 0
     },
-    "9e3941d1-1db7-41f2-a7ca-ada1a84237e0": {
+    "76dfae3e-dcf7-4c68-b4ac-d15566f28215": {
+        "name": "Leanne D",
+        "timetasticId": "305992",
+        "email": "aQm4r7QYSt81FwGPp3fBCF\/Bt\/m+tOnJQe5sSCzPRxZuBtR5tSrEkf7SGTckqOiTjbOaHw01Sp+7k+Z5r9x\/+7gltoqV6hfpn2Z8y+yIvCOdLMdcnvdoHQ==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "3e76ff2c-9e91-48e4-939a-216179bb362a": {
+        "name": "Maria R",
+        "timetasticId": "268365",
+        "email": "tArGqFmdO6p+gOIee9zWycyTs33sHRiatawRuiiH4FwBQb6aQpfY5\/pCfGRWuZ1QRuyhZyCHItV6C42rCiAeQRkh07sDdVUQdqDmjeJCAgYTqTSzF5qFyQ==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "90547d69-4b2b-4c65-ac28-512461ebc182": {
+        "name": "Matt R",
+        "timetasticId": "305995",
+        "email": "hm4AanPPhG6EbX8w7ZSeWM1tp3fLi2+Q30Cn8I+cXhA5MtX4IsDJp4Moo9APC5Yo54PUPhFCPSLVXaOvmPrS0UU4iewMWxjwZ8UZaA8WN\/o5DDnLbigyGQ==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "6a6a202e-07f7-45ac-8bbb-96cb12fa00ee": {
+        "name": "Matthew T",
+        "timetasticId": "308296",
+        "email": "ffPLMuqzxE1xiT5FJcS91GoSaPFDOQPVW8aAYZ6sAYfc8HXyJGC9DD\/h3UsznH3gwkDHrnjFLe2Sq3jdGN+OGSqGRUOdE+AvP75+dH6wdDgpPpOKbv0iYuGYnNXgl6JTHRVgWRJ53eU=",
+        "restrictedDays": [],
+        "contributionScore": 1526036253
+    },
+    "5b32e9d0-64e8-490b-870b-b77c555ee94c": {
         "name": "Mike P",
         "timetasticId": "361143",
-        "email": "0RCNVcCq78nzOj\/5KJZObAyEyeYiUrnvY5+dSRja5BRAs30BtC3bdRVPQo6LfaKJt6U0cQJHNrQlKIlRx7rAw7ZAEf466Sz1YIRm4hqFOkc\/HRg+oQnd3A==",
+        "email": "CJEmMNt3\/GY4YAORRvsaNabFRvQEhtgaFbkU2hQuWmjEibTXPEI2gaoAstIbpT51qSxkztfRjAXRzuOLthWIP5hRepIxifc9yDvxsHZVJWCAOB1GSGpijQ==",
         "restrictedDays": [],
-        "contributionScore": 1525534141
+        "contributionScore": 0
+    },
+    "9c7139f0-e37c-4071-a5d7-64b5184cca2d": {
+        "name": "Nicole G",
+        "timetasticId": "344559",
+        "email": "T0tl3VE9sfJjU2Sf\/7v+xipsr55jxh5ZXPy3hq3o3PM5MmzEmqnm1B5HMWkmly2jws9Qff8c+vXrqIzp5zj0ZfcZC0XWSlnA62NyqtazE8xPYVJwodBbvO3MzDMD+EwXjlcpb1s7X6s=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "28b7cd92-0e78-45b2-831f-30dbd51ad162": {
+        "name": "Pedro N",
+        "timetasticId": "290187",
+        "email": "V2SsreAwoF1ONxSDewlnxgDBe6mAWKB7+Zr0MtIQDYwOKneSKGRrMpLVqxzQtNXs+GnDHVlM1o8HoUtfSMLz7NGjV1Okd5PtjZdBToASMk\/MlhWCbvtFPosfJBfSaMiIcVSV9JbnfH0=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "a1db328c-7eef-4065-a04b-7d9531b20280": {
+        "name": "Richard S",
+        "timetasticId": "241069",
+        "email": "e+DlLb\/zqc7LPtEkfSMooYoh1q\/7KEVupLEnovxLCppwzHtyHpysKZVkx8vYcbkS0xuL9hFIL\/DXnhIJXeKrtEq95h6gt08Hh7+fOJonm1CH\/jnsitTvvQ==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "30dbc70b-1af0-4e18-b151-bae7357ec55f": {
+        "name": "Sabin P",
+        "timetasticId": "241073",
+        "email": "ZsrtcaTv2QewUN9EXJljbok8UyeA2zx7prHr56SsPdeatA7BjDgL5jppvSAQbOIbb34ov6yU0TN\/\/\/+h7ICQ9zgi8CAG7N\/DMa4ijGepUrOuBlAeMjjI9w==",
+        "restrictedDays": [],
+        "contributionScore": 1526036255
+    },
+    "639f7d28-6bc2-4398-b606-6a084d324a13": {
+        "name": "Sam H",
+        "timetasticId": "241076",
+        "email": "BaJpjAL7caW99JuwvPbc2ikH7qMsUUvLJYRvXpMznq9xWc2rwfQAyVJPTFVxzimW8GmbUPCnBBlAjKqLZn7IhrVAjocOMR\/ov+yGhpMdchJVI2hqeGcLOJQOOPpRLq\/Tw2J97mBsCYY=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "9594c964-2b17-4a54-8ffa-803ab4f3b596": {
+        "name": "Sangheethan S",
+        "timetasticId": "243557",
+        "email": "xXmBpUxLMLG0S19rb9cdG6GqvtH6M2molIo6YDkxDgOjBowt3d8Yh4dWGEGqJHWQQ1092MKk8bxhjPK5Owh8RORQpYctNSPsNFQ61AkLxYT3sZO4spoXlA==",
+        "restrictedDays": [],
+        "contributionScore": 1526036254
+    },
+    "31986981-9bbc-4985-aeb6-55ea34b7869c": {
+        "name": "Sarah E",
+        "timetasticId": "241077",
+        "email": "8w1eIthAPuHCjywDQCojHN3Yvf7gJUqoGUZTMaLskbq+3xmZlzYfZggvHzR1jf1r7QBxg47DmaCeztZZK7rtcI1UTuL9nxZFmrA\/xoIuyO38zC\/MbF8OqA==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "5cba8ee3-ce27-4c0d-847b-86039cc71982": {
+        "name": "Sarah W",
+        "timetasticId": "340377",
+        "email": "XJ1wKTbX9NswfEmKOCkKFu+MdG6mTfJuahpXiOK9otdI5cTvDm1YBGEDywUj7WLqzdf1Un7XSD1+46K5zBIG358HPr0HyVOangF2QHgO54Ykd+6oOxK7rHNGz8QeZB24NwyYhSDZAN4=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "d297a3f3-aee0-411f-95da-7f0b7558a1e4": {
+        "name": "Sergio C",
+        "timetasticId": "260131",
+        "email": "zmXsN76WSLl30ia8xa2H08GE07X328kC8QKnBbuaP6ylFyPabsqTr9kWojKXUTWvOy4nF7PyVbPJGSaEkXo3cbNdXOdsxHaPu\/yEm4viVL07Ry+dbzX79pag7XC8zwqZRmKNMYG35Ho=",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "4b1709c4-c022-4ecf-b0a1-f2d9cb8b4f2a": {
+        "name": "Silivina C",
+        "timetasticId": "241070",
+        "email": "1Dm6C0gmHJBDBniChgcj7N5tlofZ4GM8MEsbtnvIsUFKdHQBp0qHlF7JtB1kgod07mKkmzROyXRJrz0PeFWsFPV97ECfC40bR8FX\/5AJb8zpBbdumS\/rYw==",
+        "restrictedDays": [],
+        "contributionScore": 0
+    },
+    "34a53028-a9c1-418c-b0bf-68a13fe18643": {
+        "name": "Stephen N",
+        "timetasticId": "333295",
+        "email": "7oJlBVBqusbuqntx\/+YBj1Hqm2WGqbovkTrqx3rNzzAs5eYTxsyA3A\/14jRjyrXJ\/wWYrOlBOs5aFjLevTNCwsWROdPmBCCzUahcOZXZ9+QG7GfUKp8xp\/ib7NS7eyovjVgM\/QSxpZk=",
+        "restrictedDays": [],
+        "contributionScore": 0
     }
 }

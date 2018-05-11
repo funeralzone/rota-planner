@@ -19,6 +19,7 @@ use Philo\Blade\Blade;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use ChrisHarrison\TimetasticAPI\Client as TimetasticClient;
 
@@ -59,7 +60,8 @@ class BuildCommand extends Command
         $this->setName('build');
         $this->setDescription('Generate a rota.');
         $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
-        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Saturday, Sunday');
+        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Saturday, Sunday, Friday');
+        $this->addOption('team', 't', InputOption::VALUE_REQUIRED, 'An optional team (specified as config file name, ie "fz")');
     }
 
     public function execute(InputInterface $input, OutputInterface $output)
@@ -88,13 +90,20 @@ class BuildCommand extends Command
             $timeSlots = $timeSlots->add(new TimeSlot($timeSlotName));
         }
 
-        $members = $this->getMembersWithHolidayEntitlement($firstDateOfWeek, $timeSlots, $output);
+        $team = $this->getTeam($input);
+
+        $members = $this->getMembersWithHolidayEntitlement(
+            $firstDateOfWeek,
+            $timeSlots,
+            $output,
+            $team['members']
+        );
 
         $generatedRotaArtifact = $this->rotaGenerator->generate(
             $firstDateOfWeek->format('Y-m-d'),
             $timeSlots,
             $members,
-            2
+            1
         );
 
         $rota = $generatedRotaArtifact->getRota();
@@ -102,13 +111,23 @@ class BuildCommand extends Command
         $this->updateContributionScores($generatedRotaArtifact->getScoredMembers());
         $this->updateRota($rota);
         $output->writeln('<info>Generation complete and persisted.</info>');
-        $this->notify($rota);
+        $this->notify(
+            $rota,
+            array_unique(array_merge($team['members'], $team['notify']))
+        );
         $output->writeln('<info>Notifications sent.</info>');
     }
 
-    private function getMembersWithHolidayEntitlement(Carbon $firstDateOfWeek, TimeSlotCollection $timeSlots, OutputInterface $output) : MemberCollection
+    private function getMembersWithHolidayEntitlement(
+        Carbon $firstDateOfWeek,
+        TimeSlotCollection $timeSlots,
+        OutputInterface $output,
+        ?array $whitelistedMembers
+    ) : MemberCollection
     {
-        $members = $this->memberRepository->getAllMembers();
+        $members = $this->memberRepository
+            ->getAllMembers()
+            ->filterByTimeTasticIdWhiteList($whitelistedMembers);
 
         $membersWithEntitlement = new MemberCollection;
         $members->each(function (Member $member) use (&$membersWithEntitlement, $firstDateOfWeek, $timeSlots, $output) {
@@ -180,10 +199,16 @@ class BuildCommand extends Command
         return;
     }
 
-    private function notify(Rota $rota)
+    private function notify(
+        Rota $rota,
+        ?array $whitelistedMembers
+    )
     {
         $recipients = [];
-        $allMembers = $this->memberRepository->getAllMembers();
+        $allMembers = $this->memberRepository
+            ->getAllMembers()
+            ->filterByTimeTasticIdWhiteList($whitelistedMembers);
+
         $allMembers->each(function (Member $member) use (&$recipients) {
             $recipients[] = $member->getEmail();
         });
@@ -192,11 +217,30 @@ class BuildCommand extends Command
 
         $notification = new Notification(
             $recipients,
-            'ROTA: Next week\'s rota (Mon '.$startDate->format('j M').')',
+            'ROTA: Next week\'s Funeral Zone Support (Mon '.$startDate->format('j M').')',
             $this->blade->view()->make('new-rota-email', [
                 'rota' => $rota
             ])
         );
         $this->notifier->notify($notification);
+    }
+
+    /**
+     * @param InputInterface $input
+     *
+     * @return array|string
+     */
+    private function getTeam(InputInterface $input)
+    {
+        $team = [
+            'members' => [],
+            'notify'  => []
+        ];
+
+        if (!is_null($input->getOption('team'))) {
+            $team = require __DIR__ . '/../../data/teams/' . $input->getOption('team') . '.php';
+        }
+
+        return $team;
     }
 }
