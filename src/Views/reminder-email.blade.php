@@ -3,12 +3,11 @@
 
 <body>
 <p>Hi {{ $you->getName() }},</p>
-<p>Here are the dishwasher/bins assignees for tomorrow ({{ $when->format('D jS F') }}).</p>
+<p>Here is the Funeral Zone support rota for ({{ $when->format('D jS F') }}).</p>
 <ul>
     @foreach($slot->getAssignees() as $assignee)
         <li>{{ $assignee->getName() }}</li>
     @endforeach
 </ul>
-<p>Regards,<br>Dishwasher bot</p>
 </body>
 </html>

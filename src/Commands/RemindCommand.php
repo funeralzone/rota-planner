@@ -57,7 +57,7 @@ class RemindCommand extends Command
 
             $notification = new Notification(
                 [$member->getEmail()],
-                'ROTA: It\'s your turn to do the rota tomorrow',
+                'ROTA: It\'s your turn to do Funeral Zone support tomorrow',
                 $this->blade->view()->make('reminder-email', [
                     'slot' => $slot,
                     'you' => $member,

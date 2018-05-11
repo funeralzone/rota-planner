@@ -3,7 +3,7 @@
 
 <body>
 <p>Dear all,</p>
-<p>Here are the dishwasher assignees for next week.</p>
+<p>Here is the Funeral Zone support rota for next week.</p>
 <table border="1" cellpadding="10">
     <thead>
         @foreach ($rota->getAssignedTimeSlots() as $timeSlot)
@@ -24,11 +24,10 @@
 </table>
 <p>Responsibilities when on duty:</p>
 <ol>
-    <li>Empty the dishwasher in the morning (start it if it failed to start the night before).</li>
-    <li>Make sure the bins are emptied if they are full (or approaching capacity). This should be checked throughout the day.</li>
-    <li>Start the dishwasher before leaving the office at the end of the day.</li>
+    <li>Monitor the "Support" column on the <a href="https://trello.com/b/d7g9chuT/fz-current-work">Trello board</a>.</li>
+    <li>Report estimated timescales on each ticket you pick up</li>
+    <li>Keep communication open with the support team and be sure to inform them of updates</li>
+    <li>Chase PR approval for resolved issues</li>
 </ol>
-<p>Everyone is responsible for loading their own dishes into the dishwasher throughout the day. Please don't leave dishes in the sink or on the side.</p>
-<p>Regards,<br>Dishwasher bot</p>
 </body>
 </html>
