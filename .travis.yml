@@ -3,10 +3,10 @@ php:
   - '7.1'
 install: composer install --no-interaction
 script:
-  - php console.php daily
+  - php console.php daily --team=fz
   - git add data
   - git commit --allow-empty -m "Data changes" -- data
-  - git remote set-url origin https://chrisharrison:$GITHUB_TOKEN@github.com/chrisharrison/rota-planner.git
+  - git remote set-url origin https://kevbaldwyn:$GITHUB_TOKEN@github.com/funeralzone/rota-planner.git
   - git push origin HEAD:master
 branches:
   only: master
