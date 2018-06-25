@@ -60,7 +60,7 @@ class BuildCommand extends Command
         $this->setName('build');
         $this->setDescription('Generate a rota.');
         $this->addArgument('date', InputArgument::OPTIONAL, 'The day to run the command for. Defaults to today.');
-        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Saturday, Sunday');
+        $this->addArgument('daysToBuild', InputArgument::OPTIONAL, 'Days of the week to build.', 'Saturday, Sunday, Monday');
         $this->addOption('team', 't', InputOption::VALUE_REQUIRED, 'An optional team (specified as config file name, ie "fz")');
     }
 
