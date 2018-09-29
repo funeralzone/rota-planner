@@ -698,5 +698,40 @@
                 ]
             }
         ]
+    },
+    "cda3329a-3997-4c60-a391-d7a0b76ced33": {
+        "name": "2018-10-01",
+        "assignedTimeSlots": [
+            {
+                "timeSlot": "Monday",
+                "assignees": [
+                    "6a6a202e-07f7-45ac-8bbb-96cb12fa00ee"
+                ]
+            },
+            {
+                "timeSlot": "Tuesday",
+                "assignees": [
+                    "9594c964-2b17-4a54-8ffa-803ab4f3b596"
+                ]
+            },
+            {
+                "timeSlot": "Wednesday",
+                "assignees": [
+                    "30dbc70b-1af0-4e18-b151-bae7357ec55f"
+                ]
+            },
+            {
+                "timeSlot": "Thursday",
+                "assignees": [
+                    "6a6a202e-07f7-45ac-8bbb-96cb12fa00ee"
+                ]
+            },
+            {
+                "timeSlot": "Friday",
+                "assignees": [
+                    "9594c964-2b17-4a54-8ffa-803ab4f3b596"
+                ]
+            }
+        ]
     }
 }
